@@ -1,0 +1,34 @@
+{
+  "lcacommons.uslci.fy20.q4": [
+    {
+      "dataSource": "/data/LCI/aws-data/lcacommons.uslci.fy20.q4/exchange/OpenLcaJsonLdArchive/uslci_fy20_q4_01_olca1_10_3_json.zip",
+      "dataSourceType": "OpenLcaJsonLdArchive",
+      "interfaces": [
+        "basic",
+        "exchange"
+      ],
+      "priority": 20,
+      "static": false,
+      "config": {
+        "hints": [
+          [
+            "context",
+            "water",
+            "to water"
+          ],
+          [
+            "context",
+            "air",
+            "to air"
+          ]
+        ],
+        "prefer_provider": [
+          [
+            "153cadce-ae16-3fa0-9741-0eb91f1c77eb",
+            null
+          ]
+        ]
+      }
+    }
+  ]
+}

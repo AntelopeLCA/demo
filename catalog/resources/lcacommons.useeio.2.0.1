@@ -1,0 +1,75 @@
+{
+  "lcacommons.useeio.2.0.1": [
+    {
+      "dataSource": "/data/LCI/aws-data/lcacommons.useeio.2.0.1/exchange/OpenLcaJsonLdArchive/useeio-2.0.1-jsonld.zip",
+      "dataSourceType": "OpenLcaJsonLdArchive",
+      "interfaces": [
+        "basic",
+        "exchange"
+      ],
+      "priority": 20,
+      "static": false,
+      "config": {
+        "hints": [
+          [
+            "context",
+            "water",
+            "to water"
+          ],
+          [
+            "context",
+            "air",
+            "to air"
+          ]
+        ]
+      }
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/lcacommons.useeio.2.0.1/index/json/8e56b25018952320e0c040245ff4c4fb964cc02c.json.gz",
+      "dataSourceType": "json",
+      "interfaces": [
+        "basic",
+        "index"
+      ],
+      "priority": 50,
+      "static": true,
+      "dataReference": "lcacommons.useeio.2.0.1",
+      "config": {
+        "hints": [
+          [
+            "context",
+            "water",
+            "to water"
+          ],
+          [
+            "context",
+            "air",
+            "to air"
+          ]
+        ]
+      }
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/lcacommons.useeio.2.0.1/background/TarjanBackground/8e56b25018952320e0c040245ff4c4fb964cc02c.mat.ordering.json.gz",
+      "dataSourceType": "TarjanBackground",
+      "interfaces": [
+        "background",
+        "basic"
+      ],
+      "priority": 80,
+      "static": false,
+      "config": {}
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/lcacommons.useeio.2.0.1/background/TarjanBackground/8e56b25018952320e0c040245ff4c4fb964cc02c.mat",
+      "dataSourceType": "TarjanBackground",
+      "interfaces": [
+        "background",
+        "basic"
+      ],
+      "priority": 80,
+      "static": false,
+      "config": {}
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "u-cuenca.ecoinvent.2.2": [
+    {
+      "dataSource": "/data/LCI/aws-data/u-cuenca.ecoinvent.2.2/exchange/OpenLcaJsonLdArchive/Electricity-EC-2018.zip",
+      "dataSourceType": "OpenLcaJsonLdArchive",
+      "interfaces": [
+        "basic",
+        "exchange"
+      ],
+      "priority": 20,
+      "static": false,
+      "config": {}
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/u-cuenca.ecoinvent.2.2/index/json/8faea84158c608a24ab727aa9e002c0bba05dd12.json.gz",
+      "dataSourceType": "json",
+      "interfaces": [
+        "basic",
+        "index"
+      ],
+      "priority": 50,
+      "static": true,
+      "dataReference": "u-cuenca.ecoinvent.2.2.index.20210713",
+      "config": {}
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/u-cuenca.ecoinvent.2.2/background/TarjanBackground/8faea84158c608a24ab727aa9e002c0bba05dd12.mat",
+      "dataSourceType": "TarjanBackground",
+      "interfaces": [
+        "background",
+        "basic"
+      ],
+      "priority": 80,
+      "static": false,
+      "config": {}
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/u-cuenca.ecoinvent.2.2/background/TarjanBackground/8faea84158c608a24ab727aa9e002c0bba05dd12.mat.ordering.json.gz",
+      "dataSourceType": "TarjanBackground",
+      "interfaces": [
+        "background",
+        "basic"
+      ],
+      "priority": 80,
+      "static": false,
+      "config": {}
+    }
+  ]
+}

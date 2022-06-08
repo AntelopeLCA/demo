@@ -1,0 +1,284 @@
+{
+  "fragments": [
+    {
+      "direction": "Input",
+      "entityId": "8faf3fcb-fd01-4952-b56c-2d92f93443c7",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.00017999999999999998
+      },
+      "externalId": "coffee_1_cup",
+      "flow": "flow_coffee_1_cup",
+      "isBackground": false,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": null,
+      "tags": {
+        "Comment": "",
+        "Name": "Coffee, 1 cup",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "coffee_1_cup",
+          "origin": "foreground"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "15258b07-94e7-4ec5-9954-94c75ef2d76b",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.00018999999999999998
+      },
+      "externalId": "15258b07-94e7-4ec5-9954-94c75ef2d76b",
+      "flow": "flow_water_at_user",
+      "isBackground": true,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "coffee_1_cup",
+      "tags": {
+        "Comment": "",
+        "Name": "Water, at user",
+        "StageName": "Tap water"
+      },
+      "terminations": {
+        "default": {
+          "externalId": "ac596c5b-7779-4a51-9c5f-9ec2e0025d6d",
+          "origin": "ecoinvent.3.8.cutoff",
+          "scoreCache": [
+            {
+              "quantity": {
+                "externalId": "Global Warming Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.0010138338752104477
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Water",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 2.3481998437628096e-08
+            },
+            {
+              "quantity": {
+                "externalId": "Ecotoxicity, freshwater",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.01452214539408721
+            }
+          ],
+          "termFlow": "c5adb1fb-872e-4446-a3bb-c4b61aa4bd45"
+        }
+      }
+    },
+    {
+      "direction": "Output",
+      "entityId": "1670ccb9-18ed-4487-9ce9-f8518c0de9d0",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.0
+      },
+      "externalId": "1670ccb9-18ed-4487-9ce9-f8518c0de9d0",
+      "flow": "flow_spent_coffee_grounds",
+      "isBackground": true,
+      "isBalanceFlow": true,
+      "isPrivate": false,
+      "parent": "coffee_1_cup",
+      "tags": {
+        "Comment": "",
+        "Name": "Spent coffee grounds",
+        "StageName": "treatment of municipal solid waste, sanitary landfill"
+      },
+      "terminations": {
+        "default": {
+          "direction": "Output",
+          "externalId": "37fecf1c-c830-4bff-a8fe-76aa79d7ff2d",
+          "origin": "ecoinvent.3.8.cutoff",
+          "scoreCache": [
+            {
+              "quantity": {
+                "externalId": "Global Warming Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.048189471588907136
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Water",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 5.624575533590006e-07
+            },
+            {
+              "quantity": {
+                "externalId": "Ecotoxicity, freshwater",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 68.18400783141422
+            }
+          ],
+          "termFlow": "27da8130-82ba-485c-a800-b89efdcb0491"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "1ad325ec-b098-47c6-b597-ec1b1e06c464",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.01
+      },
+      "externalId": "1ad325ec-b098-47c6-b597-ec1b1e06c464",
+      "flow": "flow_coffee_ground",
+      "isBackground": true,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "coffee_1_cup",
+      "tags": {
+        "Comment": "",
+        "Name": "Coffee, ground",
+        "StageName": "Ground Coffee"
+      },
+      "terminations": {
+        "default": {
+          "descend": false,
+          "externalId": "coffee_ground",
+          "origin": "foreground"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "41f81fd8-0fb2-414b-acb2-83da5974a6a7",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.2
+      },
+      "externalId": "41f81fd8-0fb2-414b-acb2-83da5974a6a7",
+      "flow": "flow_coffee_filter",
+      "isBackground": false,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "coffee_1_cup",
+      "tags": {
+        "Comment": "",
+        "Name": "Coffee filter",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "41f81fd8-0fb2-414b-acb2-83da5974a6a7",
+          "origin": "foreground"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "c64322b9-5669-4ee2-8f0c-44a57835a2c7",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.0017
+      },
+      "externalId": "c64322b9-5669-4ee2-8f0c-44a57835a2c7",
+      "flow": "flow_new_coffee_filter",
+      "isBackground": true,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "41f81fd8-0fb2-414b-acb2-83da5974a6a7",
+      "tags": {
+        "Comment": "",
+        "Name": "New Coffee Filter",
+        "StageName": "Filter"
+      },
+      "terminations": {
+        "default": {
+          "externalId": "6f123135-58e0-4e4c-b556-19d5e71ea15e",
+          "origin": "ecoinvent.3.8.cutoff",
+          "scoreCache": [
+            {
+              "quantity": {
+                "externalId": "Global Warming Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 2.77369153337618
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Water",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 6.042925784751436e-05
+            },
+            {
+              "quantity": {
+                "externalId": "Ecotoxicity, freshwater",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 15.662845768255982
+            }
+          ],
+          "termFlow": "e04720d0-1b18-41bd-b729-93cfc5f862ab"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "7936d078-07f4-4982-94ad-5e5c4f86f472",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.175
+      },
+      "externalId": "7936d078-07f4-4982-94ad-5e5c4f86f472",
+      "flow": "flow_electricity_at_user",
+      "isBackground": true,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "coffee_1_cup",
+      "tags": {
+        "Comment": "",
+        "Name": "Electricity, at user",
+        "StageName": "Electricity"
+      },
+      "terminations": {
+        "default": {
+          "externalId": "56c40e26-3740-4973-916e-3999d997ea60",
+          "origin": "ecoinvent.3.8.cutoff",
+          "scoreCache": [
+            {
+              "quantity": {
+                "externalId": "Global Warming Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.4030040694892383
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Water",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 4.754889586520155e-06
+            },
+            {
+              "quantity": {
+                "externalId": "Ecotoxicity, freshwater",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 10.838528690196682
+            }
+          ],
+          "termFlow": "d69294d7-8d64-4915-a896-9996a014c410"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "lcacommons.uslci.fy21.q1": [
+    {
+      "dataSource": "/data/LCI/aws-data/lcacommons.uslci.fy21.q1/exchange/OpenLcaJsonLdArchive/uslci_fy21_q1_01_olca1_10_3_json_ld.zip",
+      "dataSourceType": "OpenLcaJsonLdArchive",
+      "interfaces": [
+        "basic",
+        "exchange",
+        "quantity"
+      ],
+      "priority": 20,
+      "static": false,
+      "config": {
+        "hints": [
+          [
+            "context",
+            "water",
+            "to water"
+          ],
+          [
+            "context",
+            "air",
+            "to air"
+          ]
+        ],
+        "prefer_provider": [
+          [
+            "153cadce-ae16-3fa0-9741-0eb91f1c77eb",
+            null
+          ]
+        ]
+      }
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/lcacommons.uslci.fy21.q1/index/json/169fc7abc04f7613e95e1bf8bdc90b2b1cd0efb1.json.gz",
+      "dataSourceType": "json",
+      "interfaces": [
+        "basic",
+        "index"
+      ],
+      "priority": 50,
+      "static": true,
+      "dataReference": "lcacommons.uslci.fy21.q1.index.20210608",
+      "config": {
+        "hints": [
+          [
+            "context",
+            "water",
+            "to water"
+          ],
+          [
+            "context",
+            "air",
+            "to air"
+          ]
+        ]
+      }
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/lcacommons.uslci.fy21.q1/background/TarjanBackground/169fc7abc04f7613e95e1bf8bdc90b2b1cd0efb1.mat",
+      "dataSourceType": "TarjanBackground",
+      "interfaces": [
+        "background",
+        "basic"
+      ],
+      "priority": 80,
+      "static": false,
+      "config": {}
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/lcacommons.uslci.fy21.q1/background/TarjanBackground/169fc7abc04f7613e95e1bf8bdc90b2b1cd0efb1.mat.ordering.json.gz",
+      "dataSourceType": "TarjanBackground",
+      "interfaces": [
+        "background",
+        "basic"
+      ],
+      "priority": 80,
+      "static": false,
+      "config": {}
+    }
+  ]
+}

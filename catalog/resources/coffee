@@ -1,0 +1,18 @@
+{
+  "coffee": [
+    {
+      "dataSource": "$CAT_ROOT/coffee",
+      "dataSourceType": "LcForeground",
+      "interfaces": [
+        "basic",
+        "foreground",
+        "index",
+        "quantity"
+      ],
+      "priority": 50,
+      "static": false,
+      "quiet": true,
+      "config": {}
+    }
+  ]
+}

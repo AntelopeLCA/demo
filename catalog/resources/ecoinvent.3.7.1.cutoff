@@ -1,0 +1,126 @@
+{
+  "ecoinvent.3.7.1.cutoff": [
+    {
+      "dataSource": "/data/LCI/aws-data/ecoinvent.3.7.1.cutoff/exchange/EcospoldV2Archive/ecoinvent 3.7.1_cutoff_ecoSpold02.zip",
+      "dataSourceType": "EcospoldV2Archive",
+      "interfaces": [
+        "basic",
+        "exchange"
+      ],
+      "priority": 60,
+      "static": false,
+      "prefix": "datasets",
+      "config": {
+        "hints": [
+          [
+            "context",
+            "water",
+            "to water"
+          ],
+          [
+            "context",
+            "air",
+            "to air"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity m2",
+            "Area"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity m3",
+            "Volume"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity m2*year",
+            "Area*time"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity kg",
+            "Mass"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity MJ",
+            "Net Calorific Value"
+          ]
+        ]
+      }
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/ecoinvent.3.7.1.cutoff/index/json/d727e01d3104ef17e5efbed9a13d370f62ec22dc.json.gz",
+      "dataSourceType": "json",
+      "interfaces": [
+        "basic",
+        "index"
+      ],
+      "priority": 50,
+      "static": true,
+      "_internal": true,
+      "config": {
+        "hints": [
+          [
+            "context",
+            "water",
+            "to water"
+          ],
+          [
+            "context",
+            "air",
+            "to air"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity m2",
+            "Area"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity m3",
+            "Volume"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity m2*year",
+            "Area*time"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity kg",
+            "Mass"
+          ],
+          [
+            "quantity",
+            "EcoSpold Quantity MJ",
+            "Net Calorific Value"
+          ]
+        ]
+      }
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/ecoinvent.3.7.1.cutoff/background/TarjanBackground/d727e01d3104ef17e5efbed9a13d370f62ec22dc.mat.ordering.json.gz",
+      "dataSourceType": "TarjanBackground",
+      "interfaces": [
+        "background",
+        "basic"
+      ],
+      "priority": 80,
+      "static": false,
+      "config": {}
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/ecoinvent.3.7.1.cutoff/background/TarjanBackground/d727e01d3104ef17e5efbed9a13d370f62ec22dc.mat",
+      "dataSourceType": "TarjanBackground",
+      "interfaces": [
+        "background",
+        "basic"
+      ],
+      "priority": 80,
+      "static": false,
+      "config": {}
+    }
+  ]
+}

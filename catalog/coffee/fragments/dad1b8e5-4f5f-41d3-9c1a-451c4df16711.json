@@ -1,0 +1,87 @@
+{
+  "fragments": [
+    {
+      "direction": "Input",
+      "entityId": "dad1b8e5-4f5f-41d3-9c1a-451c4df16711",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.65
+      },
+      "externalId": "lossy_heat",
+      "flow": "flow_lossy_heat",
+      "isBackground": false,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": null,
+      "tags": {
+        "Comment": "",
+        "Name": "Lossy Heat",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "lossy_heat",
+          "origin": "foreground"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "83bb2999-06fd-4436-b913-b6ebb2f731df",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "externalId": "83bb2999-06fd-4436-b913-b6ebb2f731df",
+      "flow": "flow_delivered_heat",
+      "isBackground": true,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "lossy_heat",
+      "tags": {
+        "Comment": "",
+        "Name": "Delivered heat",
+        "StageName": "heat production, natural gas, at boiler atmospheric non-modulating <100kW"
+      },
+      "terminations": {
+        "default": {
+          "externalId": "242162aa-17fb-4e5d-923a-899b5b7bb864",
+          "origin": "ecoinvent.3.8.cutoff",
+          "scoreCache": [
+            {
+              "quantity": {
+                "externalId": "Global Warming Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.07582926564261054
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Water",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 1.4454646713427916e-07
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 1.9926010459471388e-06
+            },
+            {
+              "quantity": {
+                "externalId": "Ecotoxicity, freshwater",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.10010765464915103
+            }
+          ],
+          "termFlow": "b3c58f5d-5815-487c-8b9c-4366e00d22dc"
+        }
+      }
+    }
+  ]
+}

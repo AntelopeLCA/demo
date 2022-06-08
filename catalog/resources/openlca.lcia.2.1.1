@@ -1,0 +1,35 @@
+{
+  "openlca.lcia.2.1.1": [
+    {
+      "dataSource": "/data/LCI/aws-data/openlca.lcia.2.1.1/index/json/a6f44fcdb69ac55f9e87764ec1e482302413a669.json.gz",
+      "dataSourceType": "json",
+      "interfaces": [
+        "basic",
+        "index"
+      ],
+      "priority": 10,
+      "static": true,
+      "dataReference": "openlca.lcia.2.1.1.index.20210707",
+      "config": {}
+    },
+    {
+      "dataSource": "/data/LCI/aws-data/openlca.lcia.2.1.1/quantity/OpenLcaJsonLdArchive/openLCA_LCIA_pack_2_1_1_27May2021.zip",
+      "dataSourceType": "OpenLcaJsonLdArchive",
+      "interfaces": [
+        "basic",
+        "quantity"
+      ],
+      "priority": 20,
+      "static": false,
+      "config": {
+        "hints": [
+          [
+            "context",
+            "fossil-",
+            "to water"
+          ]
+        ]
+      }
+    }
+  ]
+}
