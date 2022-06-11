@@ -1,26 +1,4 @@
-from antelope_foreground.foreground_catalog import NoSuchForeground
-
-
-tr = str.maketrans(' ', '_', ',[]()*&^%$#@')
-
-
-def _flow_to_ref(name):
-    n = name.translate(tr).lower()
-    if n.startswith('flow_'):
-        fl = n
-        fr = n[5:]
-    else:
-        fr = n
-        fl = 'flow_' + n
-    return fl, fr
-
-
-class MissingValue(Exception):
-    """
-    Used when a quick-link spec is missing a value and no parent is provided
-    """
-    pass
-
+from antelope_reports import QuickAndEasy, MissingValue
 
 
 TERMS = {
@@ -37,80 +15,6 @@ TERMS = {
 
 
 
-class QuickAndEasy(object):
-
-    @classmethod
-    def by_name(cls, cat, fg_name):
-        try:
-            fg = cat.foreground(fg_name, reset=True)
-        except NoSuchForeground:
-            fg = cat.create_foreground(fg_name)
-        return cls(fg)
-
-    def __init__(self, fg):
-        self._fg = fg
-        self._terms = {k: fg.catalog_ref(*v) for k, v in TERMS.items()}
-
-    @property
-    def fg(self):
-        return self._fg
-
-    def terms(self, term):
-        return self._terms[term]
-
-    def new_link(self, flow, ref_quantity, direction, amount=None, units=None, flow_ref=None, parent=None, name=None,
-                 stage=None,
-                 balance=None):
-        """
-        Just discovered that 'balance' is actually a direction
-
-        am I writing fragment_from_exchanges *again*? this is the API, this function right here
-
-        NO
-        the api is fragment_from_exchange. and yes, i am writing it again.
-
-        The policy of this impl. is to create from scratch.  no need to re-run + correct: just scratch and throw out
-
-        :param flow:
-        :param ref_quantity:
-        :param direction:
-        :param amount:
-        :param units:
-        :param flow_ref:
-        :param parent:
-        :param name:
-        :param stage:
-        :param balance: direction='balance' should be equivalent;; direction is irrelevant under balance
-        :return:
-        """
-        external_ref = name or None
-        auto_ref, frag_ref = _flow_to_ref(flow)
-
-        if parent is None:
-            external_ref = external_ref or frag_ref
-
-        f = self.fg[flow_ref or auto_ref] or self.fg.new_flow(flow, ref_quantity, external_ref=auto_ref)
-
-        amt = 0
-        if direction == 'balance':
-            balance = True
-        else:
-            try:
-                amt = float(amount)
-            except (TypeError, ValueError):
-                if parent is None:
-                    raise MissingValue
-                balance=True
-
-        if balance:
-            frag = self.fg.new_fragment(f, direction, parent=parent, balance=True)
-        else:
-            frag = self.fg.new_fragment(f, direction, value=1.0, parent=parent, external_ref=external_ref)
-            self.fg.observe(frag, exchange_value=amt, units=units)
-
-        if stage:
-            frag['StageName'] = stage
-        return frag
 
 
 class CoffeeAndShower(QuickAndEasy):
@@ -155,6 +59,10 @@ class CoffeeAndShower(QuickAndEasy):
         self.__c = roast, cg, brew, coffee
         return self.__c
 
+    @property
+    def coff(self):
+        return self.__c
+
     __s = None
 
     def build_shower(self):
@@ -181,3 +89,15 @@ class CoffeeAndShower(QuickAndEasy):
 
         self.__s = heat, hw, shower
         return self.__s
+
+    @property
+    def shwr(self):
+        return self.__s
+
+
+
+def qae_init(cat, fg_name='coffee'):
+    qae = CoffeeAndShower.by_name(cat, fg_name, terms=TERMS)
+    qae.build_coffee_frags()
+    qae.build_shower()
+    return qae
