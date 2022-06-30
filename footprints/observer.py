@@ -1,5 +1,12 @@
 from antelope_reports import QuickAndEasy, MissingValue
 
+from pandas import DataFrame
+from itertools import chain
+from csv import QUOTE_ALL
+
+
+from antelope_reports.model_runner.quick_model_runner import QuickModelRunner
+
 
 TERMS = {
     'coffee_green': ['ecoinvent.3.8.cutoff', '40cd93ba-b97f-43e5-8bbd-f86e34cf1d4d'],
@@ -101,3 +108,65 @@ def qae_init(cat, fg_name='coffee'):
     qae.build_coffee_frags()
     qae.build_shower()
     return qae
+
+
+def _frag_name(frag):
+    if frag is None:
+        return '(reference)'
+    if frag.external_ref == frag.uuid:
+        return frag.uuid[:5]
+    return frag.external_ref
+
+def _term(ff):
+    if ff.term.is_context:
+        return ff.term.term_node.name
+    elif ff.term.is_null:
+        return ff.fragment.direction
+    elif ff.term.is_process:
+        return ff.term.term_node.name
+    elif ff.term.is_fg:
+        return '(foreground)'
+    else:
+        return _frag_name(ff.term.term_node)
+
+
+def act_table(ff, *res):
+    d = {
+        'parent': _frag_name(ff.fragment.parent),
+        'direction': ff.fragment.direction,
+        'node': _frag_name(ff.fragment),
+        'flow': ff.fragment.flow.name,
+        'magnitude': ff.magnitude,
+        'units': ff.fragment.flow.unit,
+        'term': _term(ff),
+    }
+    for r in res:
+        try:
+            s = r[ff].cumulative_result
+        except KeyError:
+            if ff.fragment.is_reference:
+                s = ff.fragment.fragment_lcia(r.quantity, r.scenario).total()
+            else:
+                s = None
+        d[r.quantity['Indicator']] = s
+    return d
+
+
+refs = ('coffee_1_cup', 'coffee_ground', 'coffee_roasted', 'morning_coffee', 'hot_shower', 'hot_water_50c', 'lossy_heat')
+
+
+def write_fragment_flows(qae, q, fragment_flows_file='coffee_and_shower.csv'):
+    frags = [qae.fg[k] for k in refs]
+    res = {f: f.fragment_lcia(q) for f in frags}
+    df = DataFrame(chain(*((act_table(ff, res[ff.fragment.top()]) for ff in
+                            _f.activity(True)) for _f in frags) ))
+
+    df.to_csv(fragment_flows_file, index=False, quoting=QUOTE_ALL)
+
+
+def write_lcia(qae, q, lcia_file='coffee_shower_lcia.csv'):
+    frags = [qae.fg[k] for k in refs]
+    qr = QuickModelRunner(qae.fg, frags)
+    qr.run_lcia(q)
+    qr.results_to_csv(lcia_file)
+
