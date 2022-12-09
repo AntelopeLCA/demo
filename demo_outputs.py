@@ -92,7 +92,10 @@ def demo_output(fg, path, *qs, **kwargs):
         cfs = [models.FragmentRef.from_fragment(c).dict() for c in frag.child_flows]
         _write_api_response(*subpath, 'child_flows', response=cfs)
 
-        _write_api_response(*subpath, 'anchor', response=frag.term.to_anchor().dict())
+        anch = frag.term.to_anchor()
+        if anch is None:
+            anch = models.Anchor.null()
+        _write_api_response(*subpath, 'anchor', response=anch.dict())
 
         ffs = [models.FragmentFlow.from_fragment_flow(ff).dict() for ff in frag.traverse(observed=True)]
         _write_api_response(*subpath, 'traverse', response=ffs)

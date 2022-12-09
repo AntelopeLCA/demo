@@ -28,17 +28,7 @@
       "observed": 0.00017999999999999998
     },
     "anchors": {
-      "default": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "coffee_1_cup",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      }
+      "default": null
     }
   },
   "params": {}

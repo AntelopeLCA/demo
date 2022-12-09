@@ -2,6 +2,7 @@
   "route": "ORYX_ROOT/coffee/morning_coffee/tree_observed",
   "response": [
     {
+      "parent": null,
       "node": {
         "origin": "coffee",
         "entity_id": "morning_coffee",
@@ -18,20 +19,12 @@
       "group": "",
       "magnitude": 1.0,
       "unit": "Item(s)",
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "morning_coffee",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "morning_coffee",
       "node": {
         "origin": "coffee",
         "entity_id": "1d9c1654-c09e-4f98-baac-9284017c9095",
@@ -63,9 +56,11 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "morning_coffee",
       "node": {
         "origin": "coffee",
         "entity_id": "918cac0c-4640-42ed-afb5-8fb81f2d541f",
@@ -97,6 +92,7 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": false
     }
   ],

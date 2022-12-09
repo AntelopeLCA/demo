@@ -2,6 +2,7 @@
   "route": "ORYX_ROOT/coffee/coffee_roasted/tree_observed",
   "response": [
     {
+      "parent": null,
       "node": {
         "origin": "coffee",
         "entity_id": "coffee_roasted",
@@ -18,20 +19,12 @@
       "group": "",
       "magnitude": 1000.0,
       "unit": "kg",
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "coffee_roasted",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "coffee_roasted",
       "node": {
         "origin": "coffee",
         "entity_id": "29026e18-7c22-4b47-a619-bc33cb1f278d",
@@ -63,9 +56,11 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "coffee_roasted",
       "node": {
         "origin": "coffee",
         "entity_id": "41984457-6ebf-46de-81d8-d0a479baeba4",
@@ -97,9 +92,11 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "coffee_roasted",
       "node": {
         "origin": "coffee",
         "entity_id": "51c10cbd-813e-4709-a34c-4ba3c00936e3",
@@ -131,9 +128,11 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "coffee_roasted",
       "node": {
         "origin": "coffee",
         "entity_id": "bdef327c-70c7-45aa-b21c-84bbfbaf53f8",
@@ -165,6 +164,7 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": false
     }
   ],

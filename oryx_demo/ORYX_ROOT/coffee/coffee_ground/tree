@@ -2,6 +2,7 @@
   "route": "ORYX_ROOT/coffee/coffee_ground/tree",
   "response": [
     {
+      "parent": null,
       "node": {
         "origin": "coffee",
         "entity_id": "coffee_ground",
@@ -18,20 +19,12 @@
       "group": "",
       "magnitude": 1.0,
       "unit": "kg",
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "coffee_ground",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "coffee_ground",
       "node": {
         "origin": "coffee",
         "entity_id": "604ff203-a8d4-4a00-b300-0cda9e155c38",
@@ -63,9 +56,11 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "coffee_ground",
       "node": {
         "origin": "coffee",
         "entity_id": "6c28ef02-764b-44f3-9bf7-968b8de99aac",
@@ -93,6 +88,7 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": true
     }
   ],

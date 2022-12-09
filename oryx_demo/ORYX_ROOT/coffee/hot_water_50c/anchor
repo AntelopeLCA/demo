@@ -1,11 +1,7 @@
 {
   "route": "ORYX_ROOT/coffee/hot_water_50c/anchor",
   "response": {
-    "node": {
-      "origin": "coffee",
-      "entity_id": "hot_water_50c",
-      "entity_type": "fragment"
-    },
+    "node": null,
     "anchor_flow": null,
     "context": null,
     "descend": true,

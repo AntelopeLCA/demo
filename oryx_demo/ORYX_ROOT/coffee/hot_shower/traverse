@@ -2,6 +2,7 @@
   "route": "ORYX_ROOT/coffee/hot_shower/traverse",
   "response": [
     {
+      "parent": null,
       "node": {
         "origin": "coffee",
         "entity_id": "hot_shower",
@@ -17,22 +18,15 @@
       "name": "hot_shower",
       "group": "",
       "magnitude": 1.0,
+      "scenario": "observed",
       "unit": "Item(s)",
       "node_weight": 1.0,
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "hot_shower",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "anchor_scenario": null,
       "is_conserved": false
     },
     {
+      "parent": "hot_shower",
       "node": {
         "origin": "coffee",
         "entity_id": "43ec04e6-a521-4bc3-b15c-b50f5358454c",
@@ -48,6 +42,7 @@
       "name": "market for soap [GLO]",
       "group": "Soap",
       "magnitude": 0.025,
+      "scenario": "observed",
       "unit": "kg",
       "node_weight": 0.025,
       "anchor": {
@@ -65,9 +60,11 @@
         "descend": true,
         "score_cache": null
       },
+      "anchor_scenario": null,
       "is_conserved": false
     },
     {
+      "parent": "hot_shower",
       "node": {
         "origin": "coffee",
         "entity_id": "a777b53d-02c8-4e95-821b-14f418e62982",
@@ -83,22 +80,15 @@
       "name": "Minutes per shower",
       "group": "",
       "magnitude": 15.0,
+      "scenario": "observed",
       "unit": "Item(s)",
       "node_weight": 15.0,
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "a777b53d-02c8-4e95-821b-14f418e62982",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "anchor_scenario": null,
       "is_conserved": false
     },
     {
+      "parent": "a777b53d-02c8-4e95-821b-14f418e62982",
       "node": {
         "origin": "coffee",
         "entity_id": "58ec755b-19a7-479c-8de3-c0735070aaa7",
@@ -114,22 +104,15 @@
       "name": "liters per minute",
       "group": "",
       "magnitude": 0.12,
+      "scenario": "observed",
       "unit": "m3",
       "node_weight": 0.12,
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "58ec755b-19a7-479c-8de3-c0735070aaa7",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "anchor_scenario": null,
       "is_conserved": true
     },
     {
+      "parent": "58ec755b-19a7-479c-8de3-c0735070aaa7",
       "node": {
         "origin": "coffee",
         "entity_id": "588a5b92-03fd-41be-b60d-909e79125fe7",
@@ -145,6 +128,7 @@
       "name": "market for tap water [RoW]",
       "group": "Cold water",
       "magnitude": 0.012,
+      "scenario": "observed",
       "unit": "m3",
       "node_weight": 12.0,
       "anchor": {
@@ -162,9 +146,11 @@
         "descend": true,
         "score_cache": null
       },
+      "anchor_scenario": null,
       "is_conserved": true
     },
     {
+      "parent": "58ec755b-19a7-479c-8de3-c0735070aaa7",
       "node": {
         "origin": "coffee",
         "entity_id": "5375a2cb-460c-4615-80e6-11a8cb1d84e4",
@@ -180,6 +166,7 @@
       "name": "hot_water_50c",
       "group": "Hot water",
       "magnitude": 0.108,
+      "scenario": null,
       "unit": "m3",
       "node_weight": 108.0,
       "anchor": {
@@ -197,6 +184,7 @@
         "descend": false,
         "score_cache": null
       },
+      "anchor_scenario": null,
       "is_conserved": true
     }
   ],

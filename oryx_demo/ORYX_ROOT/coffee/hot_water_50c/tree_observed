@@ -2,6 +2,7 @@
   "route": "ORYX_ROOT/coffee/hot_water_50c/tree_observed",
   "response": [
     {
+      "parent": null,
       "node": {
         "origin": "coffee",
         "entity_id": "hot_water_50c",
@@ -18,20 +19,12 @@
       "group": "",
       "magnitude": 0.001,
       "unit": "m3",
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "hot_water_50c",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "hot_water_50c",
       "node": {
         "origin": "coffee",
         "entity_id": "7934a021-bcce-4857-81c9-2105c6a7a399",
@@ -63,9 +56,11 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": true
     },
     {
+      "parent": "hot_water_50c",
       "node": {
         "origin": "coffee",
         "entity_id": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
@@ -82,20 +77,12 @@
       "group": "",
       "magnitude": 0.004184,
       "unit": "MJ",
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
       "node": {
         "origin": "coffee",
         "entity_id": "_hot_water_delta_t",
@@ -112,20 +99,12 @@
       "group": "",
       "magnitude": 25.0,
       "unit": "MJ",
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "_hot_water_delta_t",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "_hot_water_delta_t",
       "node": {
         "origin": "coffee",
         "entity_id": "a0606ca8-59eb-4316-8f8c-6c93e55fdb94",
@@ -157,6 +136,7 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": true
     }
   ],

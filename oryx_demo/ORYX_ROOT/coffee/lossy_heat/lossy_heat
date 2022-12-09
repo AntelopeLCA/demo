@@ -28,17 +28,7 @@
       "observed": 0.65
     },
     "anchors": {
-      "default": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "lossy_heat",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      }
+      "default": null
     }
   },
   "params": {}

@@ -2,6 +2,7 @@
   "route": "ORYX_ROOT/coffee/lossy_heat/tree",
   "response": [
     {
+      "parent": null,
       "node": {
         "origin": "coffee",
         "entity_id": "lossy_heat",
@@ -18,20 +19,12 @@
       "group": "",
       "magnitude": 1.0,
       "unit": "MJ",
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "lossy_heat",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "is_cutoff": false,
       "is_balance_flow": false
     },
     {
+      "parent": "lossy_heat",
       "node": {
         "origin": "coffee",
         "entity_id": "83bb2999-06fd-4436-b913-b6ebb2f731df",
@@ -63,6 +56,7 @@
         "descend": true,
         "score_cache": null
       },
+      "is_cutoff": false,
       "is_balance_flow": false
     }
   ],

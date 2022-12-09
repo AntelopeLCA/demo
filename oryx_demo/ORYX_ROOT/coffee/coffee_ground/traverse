@@ -2,6 +2,7 @@
   "route": "ORYX_ROOT/coffee/coffee_ground/traverse",
   "response": [
     {
+      "parent": null,
       "node": {
         "origin": "coffee",
         "entity_id": "coffee_ground",
@@ -17,22 +18,15 @@
       "name": "coffee_ground",
       "group": "",
       "magnitude": 1.0,
+      "scenario": "observed",
       "unit": "kg",
       "node_weight": 1.0,
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "coffee_ground",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "anchor_scenario": null,
       "is_conserved": true
     },
     {
+      "parent": "coffee_ground",
       "node": {
         "origin": "coffee",
         "entity_id": "604ff203-a8d4-4a00-b300-0cda9e155c38",
@@ -48,6 +42,7 @@
       "name": "market for electricity, low voltage [US-WECC]",
       "group": "market for electricity, low voltage",
       "magnitude": 0.35,
+      "scenario": "observed",
       "unit": "kWh",
       "node_weight": 0.35,
       "anchor": {
@@ -65,9 +60,11 @@
         "descend": true,
         "score_cache": null
       },
+      "anchor_scenario": null,
       "is_conserved": false
     },
     {
+      "parent": "coffee_ground",
       "node": {
         "origin": "coffee",
         "entity_id": "6c28ef02-764b-44f3-9bf7-968b8de99aac",
@@ -83,6 +80,7 @@
       "name": "coffee_roasted",
       "group": "",
       "magnitude": 1.0,
+      "scenario": null,
       "unit": "kg",
       "node_weight": 1.0,
       "anchor": {
@@ -96,9 +94,11 @@
         "descend": true,
         "score_cache": null
       },
+      "anchor_scenario": null,
       "is_conserved": true
     },
     {
+      "parent": null,
       "node": {
         "origin": "coffee",
         "entity_id": "coffee_roasted",
@@ -114,22 +114,15 @@
       "name": "coffee_roasted",
       "group": "",
       "magnitude": 1.0,
+      "scenario": "observed",
       "unit": "kg",
       "node_weight": 0.001,
-      "anchor": {
-        "node": {
-          "origin": "coffee",
-          "entity_id": "coffee_roasted",
-          "entity_type": "fragment"
-        },
-        "anchor_flow": null,
-        "context": null,
-        "descend": true,
-        "score_cache": null
-      },
+      "anchor": null,
+      "anchor_scenario": null,
       "is_conserved": false
     },
     {
+      "parent": "coffee_roasted",
       "node": {
         "origin": "coffee",
         "entity_id": "29026e18-7c22-4b47-a619-bc33cb1f278d",
@@ -145,6 +138,7 @@
       "name": "market for coffee, green bean [GLO]",
       "group": "market for coffee, green bean",
       "magnitude": 1.1520000000000001,
+      "scenario": "observed",
       "unit": "kg",
       "node_weight": 1.1520000000000001,
       "anchor": {
@@ -162,9 +156,11 @@
         "descend": true,
         "score_cache": null
       },
+      "anchor_scenario": null,
       "is_conserved": false
     },
     {
+      "parent": "coffee_roasted",
       "node": {
         "origin": "coffee",
         "entity_id": "41984457-6ebf-46de-81d8-d0a479baeba4",
@@ -180,6 +176,7 @@
       "name": "heat production, natural gas, at boiler condensing modulating >100kW [RoW]",
       "group": "heat production, natural gas, at boiler condensing modulating >100kW",
       "magnitude": 1.702,
+      "scenario": "observed",
       "unit": "MJ",
       "node_weight": 1.702,
       "anchor": {
@@ -197,9 +194,11 @@
         "descend": true,
         "score_cache": null
       },
+      "anchor_scenario": null,
       "is_conserved": false
     },
     {
+      "parent": "coffee_roasted",
       "node": {
         "origin": "coffee",
         "entity_id": "51c10cbd-813e-4709-a34c-4ba3c00936e3",
@@ -215,6 +214,7 @@
       "name": "market for tap water [RoW]",
       "group": "market for tap water",
       "magnitude": 0.384,
+      "scenario": "observed",
       "unit": "kg",
       "node_weight": 0.384,
       "anchor": {
@@ -232,9 +232,11 @@
         "descend": true,
         "score_cache": null
       },
+      "anchor_scenario": null,
       "is_conserved": false
     },
     {
+      "parent": "coffee_roasted",
       "node": {
         "origin": "coffee",
         "entity_id": "bdef327c-70c7-45aa-b21c-84bbfbaf53f8",
@@ -250,6 +252,7 @@
       "name": "market for electricity, low voltage [US-WECC]",
       "group": "market for electricity, low voltage",
       "magnitude": 0.07638888888895001,
+      "scenario": "observed",
       "unit": "kWh",
       "node_weight": 0.07638888888895001,
       "anchor": {
@@ -267,6 +270,7 @@
         "descend": true,
         "score_cache": null
       },
+      "anchor_scenario": null,
       "is_conserved": false
     }
   ],
