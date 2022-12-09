@@ -89,7 +89,8 @@
       "entityType": "fragment",
       "exchangeValues": {
         "0": 1.0,
-        "1": 15.0
+        "1": 15.0,
+        "long shower": 20.0
       },
       "externalId": "a777b53d-02c8-4e95-821b-14f418e62982",
       "flow": "flow_minutes_per_shower",
@@ -168,7 +169,8 @@
       "entityType": "fragment",
       "exchangeValues": {
         "0": 1.0,
-        "1": 0.1
+        "1": 0.1,
+        "hot shower": 0.0
       },
       "externalId": "588a5b92-03fd-41be-b60d-909e79125fe7",
       "flow": "flow_water_at_user",
