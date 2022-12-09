@@ -1,0 +1,66 @@
+{
+  "route": "ORYX_ROOT/coffee/coffee_1_cup/child_flows",
+  "response": [
+    {
+      "origin": "coffee",
+      "entity_id": "15258b07-94e7-4ec5-9954-94c75ef2d76b",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee",
+        "entity_id": "flow_water_at_user",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Water, at user"
+    },
+    {
+      "origin": "coffee",
+      "entity_id": "1670ccb9-18ed-4487-9ce9-f8518c0de9d0",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee",
+        "entity_id": "flow_spent_coffee_grounds",
+        "entity_type": "flow"
+      },
+      "direction": "Output",
+      "name": "Spent coffee grounds"
+    },
+    {
+      "origin": "coffee",
+      "entity_id": "1ad325ec-b098-47c6-b597-ec1b1e06c464",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee",
+        "entity_id": "flow_coffee_ground",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Coffee, ground"
+    },
+    {
+      "origin": "coffee",
+      "entity_id": "41f81fd8-0fb2-414b-acb2-83da5974a6a7",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee",
+        "entity_id": "flow_coffee_filter",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Coffee filter"
+    },
+    {
+      "origin": "coffee",
+      "entity_id": "7936d078-07f4-4982-94ad-5e5c4f86f472",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee",
+        "entity_id": "flow_electricity_at_user",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Electricity, at user"
+    }
+  ],
+  "params": {}
+}

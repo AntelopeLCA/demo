@@ -1,0 +1,45 @@
+{
+  "route": "ORYX_ROOT/coffee/morning_coffee/morning_coffee",
+  "response": {
+    "origin": "coffee",
+    "entity_id": "morning_coffee",
+    "entity_type": "fragment",
+    "properties": {
+      "Name": "Morning coffee",
+      "Comment": "",
+      "StageName": ""
+    },
+    "flow": {
+      "origin": "coffee",
+      "entity_id": "flow_morning_coffee",
+      "entity_type": "flow",
+      "properties": {
+        "name": "Morning coffee",
+        "referenceQuantity": "01846770-4cfe-4a25-8ad9-919d8d378345"
+      },
+      "context": [],
+      "locale": "GLO"
+    },
+    "direction": "Output",
+    "parent": null,
+    "is_balance_flow": false,
+    "exchange_values": {
+      "cached": 1.0,
+      "observed": 1.0
+    },
+    "anchors": {
+      "default": {
+        "node": {
+          "origin": "coffee",
+          "entity_id": "morning_coffee",
+          "entity_type": "fragment"
+        },
+        "anchor_flow": null,
+        "context": null,
+        "descend": true,
+        "score_cache": null
+      }
+    }
+  },
+  "params": {}
+}

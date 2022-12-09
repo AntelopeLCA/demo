@@ -1,0 +1,67 @@
+{
+  "route": "ORYX_ROOT/coffee/hot_shower/stage_lcia/Ozone Depletion Air",
+  "response": {
+    "scenario": "None",
+    "object": "hot_shower",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Ozone Depletion Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Ozone Depletion Air",
+        "unit": "kg CFC-11 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 3.067529233051285e-10,
+    "components": [
+      {
+        "component": "Soap",
+        "result": 3.071339611395738e-11,
+        "origin": "coffee",
+        "entity_id": "hot_shower",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Soap",
+            "result": 3.071339611395738e-11,
+            "node_weight": 1.0,
+            "unit_score": 3.071339611395738e-11
+          }
+        ]
+      },
+      {
+        "component": "Cold water",
+        "result": 7.842501379167843e-12,
+        "origin": "coffee",
+        "entity_id": "hot_shower",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Cold water",
+            "result": 7.842501379167843e-12,
+            "node_weight": 1.0,
+            "unit_score": 7.842501379167843e-12
+          }
+        ]
+      },
+      {
+        "component": "Hot water",
+        "result": 2.6819702581200324e-10,
+        "origin": "coffee",
+        "entity_id": "hot_shower",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Hot water",
+            "result": 2.6819702581200324e-10,
+            "node_weight": 1.0,
+            "unit_score": 2.6819702581200324e-10
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

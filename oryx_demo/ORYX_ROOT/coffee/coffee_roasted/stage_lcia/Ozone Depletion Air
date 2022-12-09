@@ -1,0 +1,82 @@
+{
+  "route": "ORYX_ROOT/coffee/coffee_roasted/stage_lcia/Ozone Depletion Air",
+  "response": {
+    "scenario": "None",
+    "object": "coffee_roasted",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Ozone Depletion Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Ozone Depletion Air",
+        "unit": "kg CFC-11 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 7.169972461255522e-06,
+    "components": [
+      {
+        "component": "market for coffee, green bean",
+        "result": 7.138223677918116e-06,
+        "origin": "coffee",
+        "entity_id": "coffee_roasted",
+        "details": [],
+        "summaries": [
+          {
+            "component": "market for coffee, green bean",
+            "result": 7.138223677918116e-06,
+            "node_weight": 1.0,
+            "unit_score": 7.138223677918116e-06
+          }
+        ]
+      },
+      {
+        "component": "heat production, natural gas, at boiler condensing modulating >100kW",
+        "result": 1.9068565952193513e-09,
+        "origin": "coffee",
+        "entity_id": "coffee_roasted",
+        "details": [],
+        "summaries": [
+          {
+            "component": "heat production, natural gas, at boiler condensing modulating >100kW",
+            "result": 1.9068565952193513e-09,
+            "node_weight": 1.0,
+            "unit_score": 1.9068565952193513e-09
+          }
+        ]
+      },
+      {
+        "component": "market for tap water",
+        "result": 2.5096004413337096e-10,
+        "origin": "coffee",
+        "entity_id": "coffee_roasted",
+        "details": [],
+        "summaries": [
+          {
+            "component": "market for tap water",
+            "result": 2.5096004413337096e-10,
+            "node_weight": 1.0,
+            "unit_score": 2.5096004413337096e-10
+          }
+        ]
+      },
+      {
+        "component": "market for electricity, low voltage",
+        "result": 2.9590966698052365e-08,
+        "origin": "coffee",
+        "entity_id": "coffee_roasted",
+        "details": [],
+        "summaries": [
+          {
+            "component": "market for electricity, low voltage",
+            "result": 2.9590966698052365e-08,
+            "node_weight": 1.0,
+            "unit_score": 2.9590966698052365e-08
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

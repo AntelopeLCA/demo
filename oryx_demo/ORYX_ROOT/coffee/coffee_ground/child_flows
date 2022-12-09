@@ -1,0 +1,30 @@
+{
+  "route": "ORYX_ROOT/coffee/coffee_ground/child_flows",
+  "response": [
+    {
+      "origin": "coffee",
+      "entity_id": "604ff203-a8d4-4a00-b300-0cda9e155c38",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee",
+        "entity_id": "flow_electricity_grinding",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Electricity, grinding"
+    },
+    {
+      "origin": "coffee",
+      "entity_id": "6c28ef02-764b-44f3-9bf7-968b8de99aac",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee",
+        "entity_id": "flow_coffee_roasted",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Coffee, roasted"
+    }
+  ],
+  "params": {}
+}

@@ -1,0 +1,82 @@
+{
+  "route": "ORYX_ROOT/coffee/coffee_roasted/anchor_lcia/Global Warming Air",
+  "response": {
+    "scenario": "None",
+    "object": "coffee_roasted",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Global Warming Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Global Warming Air",
+        "unit": "kg CO2 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 6467.771357575158,
+    "components": [
+      {
+        "component": "Coffee, green",
+        "result": 6327.048885198406,
+        "origin": "coffee",
+        "entity_id": "29026e18-7c22-4b47-a619-bc33cb1f278d",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Coffee, green",
+            "result": 6327.048885198406,
+            "node_weight": 1152.0,
+            "unit_score": 5.492229935068061
+          }
+        ]
+      },
+      {
+        "component": "Heat, natural gas",
+        "result": 109.54812708266195,
+        "origin": "coffee",
+        "entity_id": "41984457-6ebf-46de-81d8-d0a479baeba4",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Heat, natural gas",
+            "result": 109.54812708266195,
+            "node_weight": 1702.0,
+            "unit_score": 0.06436435198746296
+          }
+        ]
+      },
+      {
+        "component": "Water",
+        "result": 0.3893122080808119,
+        "origin": "coffee",
+        "entity_id": "51c10cbd-813e-4709-a34c-4ba3c00936e3",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Water",
+            "result": 0.3893122080808119,
+            "node_weight": 384.0,
+            "unit_score": 0.0010138338752104477
+          }
+        ]
+      },
+      {
+        "component": "Electricity",
+        "result": 30.78503308600811,
+        "origin": "coffee",
+        "entity_id": "bdef327c-70c7-45aa-b21c-84bbfbaf53f8",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Electricity",
+            "result": 30.78503308600811,
+            "node_weight": 76.38888888895,
+            "unit_score": 0.4030040694892383
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

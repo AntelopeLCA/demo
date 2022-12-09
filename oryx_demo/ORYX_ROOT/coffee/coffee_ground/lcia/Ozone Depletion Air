@@ -1,0 +1,1079 @@
+{
+  "route": "ORYX_ROOT/coffee/coffee_ground/lcia/Ozone Depletion Air",
+  "response": {
+    "scenario": "None",
+    "object": "coffee_ground",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Ozone Depletion Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Ozone Depletion Air",
+        "unit": "kg CFC-11 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 7.305552890490124e-09,
+    "components": [
+      {
+        "component": "Methane, dichlorodifluoro-, CFC-12; urban air",
+        "result": 6.702497881421276e-09,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [
+          {
+            "exchange": {
+              "external_ref": "31a3e44c-4098-461e-aba2-f79540e05087",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 6.6590778066053625e-09
+          },
+          {
+            "exchange": {
+              "external_ref": "31a3e44c-4098-461e-aba2-f79540e05087",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 3.54612442860185e-11
+          },
+          {
+            "exchange": {
+              "external_ref": "31a3e44c-4098-461e-aba2-f79540e05087",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 7.739557284653087e-12
+          },
+          {
+            "exchange": {
+              "external_ref": "31a3e44c-4098-461e-aba2-f79540e05087",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 1.6614255086743922e-13
+          },
+          {
+            "exchange": {
+              "external_ref": "31a3e44c-4098-461e-aba2-f79540e05087",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 5.3130694374959344e-14
+          }
+        ],
+        "summaries": []
+      },
+      {
+        "component": "Ethane, 1,1,1-trichloro-, HCFC-140; rural air",
+        "result": 9.593342196383596e-11,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [
+          {
+            "exchange": {
+              "external_ref": "99585564-bfce-4845-9aaa-2f24b8f26a41",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 8.002950362362373e-11
+          },
+          {
+            "exchange": {
+              "external_ref": "99585564-bfce-4845-9aaa-2f24b8f26a41",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 1.2775843429200758e-11
+          },
+          {
+            "exchange": {
+              "external_ref": "99585564-bfce-4845-9aaa-2f24b8f26a41",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 2.7883785262166828e-12
+          },
+          {
+            "exchange": {
+              "external_ref": "99585564-bfce-4845-9aaa-2f24b8f26a41",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 3.033680438688333e-13
+          },
+          {
+            "exchange": {
+              "external_ref": "99585564-bfce-4845-9aaa-2f24b8f26a41",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 3.6328340925958144e-14
+          }
+        ],
+        "summaries": []
+      },
+      {
+        "component": "Methane, monochloro-, R-40; rural air",
+        "result": 4.234649326075601e-10,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [
+          {
+            "exchange": {
+              "external_ref": "ed63abd0-7cc6-4825-8759-b367e560fe95",
+              "flowable": "Methane, monochloro-, R-40",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl chloride",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.02
+            },
+            "result": 3.532620798974962e-10
+          },
+          {
+            "exchange": {
+              "external_ref": "ed63abd0-7cc6-4825-8759-b367e560fe95",
+              "flowable": "Methane, monochloro-, R-40",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl chloride",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.02
+            },
+            "result": 5.639495699472392e-11
+          },
+          {
+            "exchange": {
+              "external_ref": "ed63abd0-7cc6-4825-8759-b367e560fe95",
+              "flowable": "Methane, monochloro-, R-40",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl chloride",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.02
+            },
+            "result": 1.230842315362023e-11
+          },
+          {
+            "exchange": {
+              "external_ref": "ed63abd0-7cc6-4825-8759-b367e560fe95",
+              "flowable": "Methane, monochloro-, R-40",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl chloride",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.02
+            },
+            "result": 1.3391132571045594e-12
+          },
+          {
+            "exchange": {
+              "external_ref": "ed63abd0-7cc6-4825-8759-b367e560fe95",
+              "flowable": "Methane, monochloro-, R-40",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl chloride",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.02
+            },
+            "result": 1.603593046152252e-13
+          }
+        ],
+        "summaries": []
+      },
+      {
+        "component": "Methane, dichlorodifluoro-, CFC-12; to air",
+        "result": 4.090452977261756e-14,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [
+          {
+            "exchange": {
+              "external_ref": "c0e8ec60-a5ae-432e-97a5-cf76b6247a00",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 2.5679636447490136e-14
+          },
+          {
+            "exchange": {
+              "external_ref": "c0e8ec60-a5ae-432e-97a5-cf76b6247a00",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 7.818233931938065e-15
+          },
+          {
+            "exchange": {
+              "external_ref": "c0e8ec60-a5ae-432e-97a5-cf76b6247a00",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 5.6923566688576796e-15
+          },
+          {
+            "exchange": {
+              "external_ref": "c0e8ec60-a5ae-432e-97a5-cf76b6247a00",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 1.7063605803846733e-15
+          },
+          {
+            "exchange": {
+              "external_ref": "c0e8ec60-a5ae-432e-97a5-cf76b6247a00",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 7.942143947003878e-18
+          }
+        ],
+        "summaries": []
+      },
+      {
+        "component": "Ethane, 1,1,1-trichloro-, HCFC-140; to air",
+        "result": 5.038240862240709e-15,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [
+          {
+            "exchange": {
+              "external_ref": "ce6294f5-2ed7-46ee-a967-33e265e34455",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 3.162979611218911e-15
+          },
+          {
+            "exchange": {
+              "external_ref": "ce6294f5-2ed7-46ee-a967-33e265e34455",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 9.629775940557912e-16
+          },
+          {
+            "exchange": {
+              "external_ref": "ce6294f5-2ed7-46ee-a967-33e265e34455",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 7.011317360422263e-16
+          },
+          {
+            "exchange": {
+              "external_ref": "ce6294f5-2ed7-46ee-a967-33e265e34455",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 2.1017368124250358e-16
+          },
+          {
+            "exchange": {
+              "external_ref": "ce6294f5-2ed7-46ee-a967-33e265e34455",
+              "flowable": "Ethane, 1,1,1-trichloro-, HCFC-140",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "1,1,1-trichloroethane",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.12
+            },
+            "result": 9.782396812771236e-19
+          }
+        ],
+        "summaries": []
+      },
+      {
+        "component": "Methane, bromo-, Halon 1001; to air",
+        "result": 7.853916349308571e-11,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [
+          {
+            "exchange": {
+              "external_ref": "8c283de2-50d3-40c8-8bff-1e172c3398f8",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 4.0808854371354274e-11
+          },
+          {
+            "exchange": {
+              "external_ref": "8c283de2-50d3-40c8-8bff-1e172c3398f8",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 3.0923897725129914e-11
+          },
+          {
+            "exchange": {
+              "external_ref": "8c283de2-50d3-40c8-8bff-1e172c3398f8",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 6.7492633923948665e-12
+          },
+          {
+            "exchange": {
+              "external_ref": "8c283de2-50d3-40c8-8bff-1e172c3398f8",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 5.625208898431355e-14
+          },
+          {
+            "exchange": {
+              "external_ref": "8c283de2-50d3-40c8-8bff-1e172c3398f8",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 8.959152223465059e-16
+          }
+        ],
+        "summaries": []
+      },
+      {
+        "component": "Methane, dichlorodifluoro-, CFC-12; rural air",
+        "result": 5.071548233727704e-12,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [
+          {
+            "exchange": {
+              "external_ref": "e93ba406-3df8-4e34-be54-0d556b2bb629",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 5.016590804216321e-12
+          },
+          {
+            "exchange": {
+              "external_ref": "e93ba406-3df8-4e34-be54-0d556b2bb629",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 3.5587165989305705e-14
+          },
+          {
+            "exchange": {
+              "external_ref": "e93ba406-3df8-4e34-be54-0d556b2bb629",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 1.570558800498135e-14
+          },
+          {
+            "exchange": {
+              "external_ref": "e93ba406-3df8-4e34-be54-0d556b2bb629",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 3.4278069058518473e-15
+          },
+          {
+            "exchange": {
+              "external_ref": "e93ba406-3df8-4e34-be54-0d556b2bb629",
+              "flowable": "Methane, dichlorodifluoro-, CFC-12",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "rural air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "cfc-12",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 1.0
+            },
+            "result": 2.3686861124433726e-16
+          }
+        ],
+        "summaries": []
+      },
+      {
+        "component": "Methane, bromo-, Halon 1001; urban air",
+        "result": 3.970921495247376e-24,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [
+          {
+            "exchange": {
+              "external_ref": "4bf1c333-419b-4278-ac14-247c8bf563d6",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 3.8313022115472726e-24
+          },
+          {
+            "exchange": {
+              "external_ref": "4bf1c333-419b-4278-ac14-247c8bf563d6",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 1.0678254916249477e-25
+          },
+          {
+            "exchange": {
+              "external_ref": "4bf1c333-419b-4278-ac14-247c8bf563d6",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 2.3305715095007583e-26
+          },
+          {
+            "exchange": {
+              "external_ref": "4bf1c333-419b-4278-ac14-247c8bf563d6",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 9.163637589739842e-27
+          },
+          {
+            "exchange": {
+              "external_ref": "4bf1c333-419b-4278-ac14-247c8bf563d6",
+              "flowable": "Methane, bromo-, Halon 1001",
+              "quantity_ref": "93a60a56-a3c8-11da-a746-0800200b9a66",
+              "context": [
+                "Emissions",
+                "to air",
+                "urban air"
+              ],
+              "locale": "GLO"
+            },
+            "factor": {
+              "origin": "local.lcia.traci.2.1",
+              "flowable": "methyl bromide",
+              "ref_quantity": "Mass",
+              "query_quantity": "Ozone Depletion Air",
+              "context": [
+                "air"
+              ],
+              "locale": "GLO",
+              "value": 0.51
+            },
+            "result": 3.6738185286123853e-28
+          }
+        ],
+        "summaries": []
+      }
+    ]
+  },
+  "params": {}
+}

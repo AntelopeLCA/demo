@@ -1,0 +1,67 @@
+{
+  "route": "ORYX_ROOT/coffee/hot_shower/stage_lcia/Global Warming Air",
+  "response": {
+    "scenario": "None",
+    "object": "hot_shower",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Global Warming Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Global Warming Air",
+        "unit": "kg CO2 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 1.4879232420593023,
+    "components": [
+      {
+        "component": "Soap",
+        "result": 0.04837387224721357,
+        "origin": "coffee",
+        "entity_id": "hot_shower",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Soap",
+            "result": 0.04837387224721357,
+            "node_weight": 1.0,
+            "unit_score": 0.04837387224721357
+          }
+        ]
+      },
+      {
+        "component": "Cold water",
+        "result": 0.012166006502525372,
+        "origin": "coffee",
+        "entity_id": "hot_shower",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Cold water",
+            "result": 0.012166006502525372,
+            "node_weight": 1.0,
+            "unit_score": 0.012166006502525372
+          }
+        ]
+      },
+      {
+        "component": "Hot water",
+        "result": 1.4273833633095634,
+        "origin": "coffee",
+        "entity_id": "hot_shower",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Hot water",
+            "result": 1.4273833633095634,
+            "node_weight": 1.0,
+            "unit_score": 1.4273833633095634
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

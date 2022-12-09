@@ -1,0 +1,97 @@
+{
+  "route": "ORYX_ROOT/coffee/coffee_ground/contrib_lcia/Global Warming Air",
+  "response": {
+    "scenario": "None",
+    "object": "coffee_ground",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Global Warming Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Global Warming Air",
+        "unit": "kg CO2 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 6.608822781896392,
+    "components": [
+      {
+        "component": "market for electricity, low voltage [US-WECC]",
+        "result": 0.14105142432123338,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Electricity, grinding",
+            "result": 0.4030040694892383,
+            "node_weight": 1.0,
+            "unit_score": 0.4030040694892383
+          }
+        ]
+      },
+      {
+        "component": "market for coffee, green bean [GLO]",
+        "result": 6.3270488851984075,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Coffee, green",
+            "result": 5.492229935068061,
+            "node_weight": 1.0,
+            "unit_score": 5.492229935068061
+          }
+        ]
+      },
+      {
+        "component": "heat production, natural gas, at boiler condensing modulating >100kW [RoW]",
+        "result": 0.10954812708266196,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Heat, natural gas",
+            "result": 0.06436435198746296,
+            "node_weight": 1.0,
+            "unit_score": 0.06436435198746296
+          }
+        ]
+      },
+      {
+        "component": "market for tap water [RoW]",
+        "result": 0.0003893122080808119,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Water",
+            "result": 0.0010138338752104477,
+            "node_weight": 1.0,
+            "unit_score": 0.0010138338752104477
+          }
+        ]
+      },
+      {
+        "component": "market for electricity, low voltage [US-WECC]",
+        "result": 0.030785033086008114,
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Electricity",
+            "result": 0.4030040694892383,
+            "node_weight": 1.0,
+            "unit_score": 0.4030040694892383
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

@@ -1,0 +1,112 @@
+{
+  "route": "ORYX_ROOT/coffee/morning_coffee/stage_lcia/Ozone Depletion Air",
+  "response": {
+    "scenario": "None",
+    "object": "morning_coffee",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Ozone Depletion Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Ozone Depletion Air",
+        "unit": "kg CFC-11 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 2.7013918352434034e-10,
+    "components": [
+      {
+        "component": "Sugar",
+        "result": 8.441481531849253e-12,
+        "origin": "coffee",
+        "entity_id": "morning_coffee",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Sugar",
+            "result": 8.441481531849253e-12,
+            "node_weight": 1.0,
+            "unit_score": 8.441481531849253e-12
+          }
+        ]
+      },
+      {
+        "component": "Tap water",
+        "result": 2.2765038725639987e-13,
+        "origin": "coffee",
+        "entity_id": "morning_coffee",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Tap water",
+            "result": 2.2765038725639987e-13,
+            "node_weight": 1.0,
+            "unit_score": 2.2765038725639987e-13
+          }
+        ]
+      },
+      {
+        "component": "Ground Coffee",
+        "result": 1.3393513632565234e-10,
+        "origin": "coffee",
+        "entity_id": "morning_coffee",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Ground Coffee",
+            "result": 1.3393513632565234e-10,
+            "node_weight": 1.0,
+            "unit_score": 1.3393513632565234e-10
+          }
+        ]
+      },
+      {
+        "component": "Filter",
+        "result": 7.325812926231971e-13,
+        "origin": "coffee",
+        "entity_id": "morning_coffee",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Filter",
+            "result": 7.325812926231971e-13,
+            "node_weight": 1.0,
+            "unit_score": 7.325812926231971e-13
+          }
+        ]
+      },
+      {
+        "component": "Electricity",
+        "result": 1.242820601317205e-10,
+        "origin": "coffee",
+        "entity_id": "morning_coffee",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Electricity",
+            "result": 1.242820601317205e-10,
+            "node_weight": 1.0,
+            "unit_score": 1.242820601317205e-10
+          }
+        ]
+      },
+      {
+        "component": "treatment of municipal solid waste, sanitary landfill",
+        "result": 2.520273855238643e-12,
+        "origin": "coffee",
+        "entity_id": "morning_coffee",
+        "details": [],
+        "summaries": [
+          {
+            "component": "treatment of municipal solid waste, sanitary landfill",
+            "result": 2.520273855238643e-12,
+            "node_weight": 1.0,
+            "unit_score": 2.520273855238643e-12
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

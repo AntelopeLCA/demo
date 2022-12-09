@@ -1,0 +1,26 @@
+{
+  "route": "ORYX_ROOT/lcia_methods",
+  "response": [
+    {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Global Warming Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Global Warming Air",
+        "unit": "kg CO2 eq",
+        "is_lcia_method": true
+      }
+    },
+    {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Ozone Depletion Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Ozone Depletion Air",
+        "unit": "kg CFC-11 eq",
+        "is_lcia_method": true
+      }
+    }
+  ],
+  "params": {}
+}

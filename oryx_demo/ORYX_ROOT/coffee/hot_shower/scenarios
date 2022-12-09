@@ -1,0 +1,8 @@
+{
+  "route": "ORYX_ROOT/coffee/hot_shower/scenarios",
+  "response": [
+    "hot shower",
+    "long shower"
+  ],
+  "params": {}
+}

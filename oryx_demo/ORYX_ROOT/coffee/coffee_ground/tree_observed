@@ -1,0 +1,102 @@
+{
+  "route": "ORYX_ROOT/coffee/coffee_ground/tree_observed",
+  "response": [
+    {
+      "node": {
+        "origin": "coffee",
+        "entity_id": "coffee_ground",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee",
+          "entity_id": "flow_coffee_ground",
+          "entity_type": "flow"
+        },
+        "direction": "Output",
+        "name": "Coffee, ground"
+      },
+      "name": "coffee_ground",
+      "group": "",
+      "magnitude": 1.0,
+      "unit": "kg",
+      "anchor": {
+        "node": {
+          "origin": "coffee",
+          "entity_id": "coffee_ground",
+          "entity_type": "fragment"
+        },
+        "anchor_flow": null,
+        "context": null,
+        "descend": true,
+        "score_cache": null
+      },
+      "is_balance_flow": false
+    },
+    {
+      "node": {
+        "origin": "coffee",
+        "entity_id": "604ff203-a8d4-4a00-b300-0cda9e155c38",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee",
+          "entity_id": "flow_electricity_grinding",
+          "entity_type": "flow"
+        },
+        "direction": "Input",
+        "name": "Electricity, grinding"
+      },
+      "name": "market for electricity, low voltage [US-WECC]",
+      "group": "market for electricity, low voltage",
+      "magnitude": 0.35,
+      "unit": "kWh",
+      "anchor": {
+        "node": {
+          "origin": "ecoinvent.3.8.cutoff",
+          "entity_id": "56c40e26-3740-4973-916e-3999d997ea60",
+          "entity_type": "process"
+        },
+        "anchor_flow": {
+          "origin": "ecoinvent.3.8.cutoff",
+          "entity_id": "d69294d7-8d64-4915-a896-9996a014c410",
+          "entity_type": "flow"
+        },
+        "context": null,
+        "descend": true,
+        "score_cache": null
+      },
+      "is_balance_flow": false
+    },
+    {
+      "node": {
+        "origin": "coffee",
+        "entity_id": "6c28ef02-764b-44f3-9bf7-968b8de99aac",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee",
+          "entity_id": "flow_coffee_roasted",
+          "entity_type": "flow"
+        },
+        "direction": "Input",
+        "name": "Coffee, roasted"
+      },
+      "name": "coffee_roasted",
+      "group": "",
+      "magnitude": null,
+      "unit": "kg",
+      "anchor": {
+        "node": {
+          "origin": "coffee",
+          "entity_id": "coffee_roasted",
+          "entity_type": "fragment"
+        },
+        "anchor_flow": null,
+        "context": null,
+        "descend": true,
+        "score_cache": null
+      },
+      "is_balance_flow": true
+    }
+  ],
+  "params": {
+    "scenario": "observed"
+  }
+}
