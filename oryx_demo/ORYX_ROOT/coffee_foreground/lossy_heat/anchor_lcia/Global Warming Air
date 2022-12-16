@@ -1,0 +1,37 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/lossy_heat/anchor_lcia/Global Warming Air",
+  "response": {
+    "scenario": "None",
+    "object": "lossy_heat",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Global Warming Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Global Warming Air",
+        "unit": "kg CO2 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 0.07582926564261054,
+    "components": [
+      {
+        "component": "Delivered heat",
+        "result": 0.07582926564261054,
+        "origin": "coffee_foreground",
+        "entity_id": "83bb2999-06fd-4436-b913-b6ebb2f731df",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Delivered heat",
+            "result": 0.07582926564261054,
+            "node_weight": 1.0,
+            "unit_score": 0.07582926564261054
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

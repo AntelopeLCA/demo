@@ -1,0 +1,54 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/coffee_roasted/child_flows",
+  "response": [
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "29026e18-7c22-4b47-a619-bc33cb1f278d",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_coffee_green",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Coffee, green"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "41984457-6ebf-46de-81d8-d0a479baeba4",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_heat_natural_gas",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Heat, natural gas"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "51c10cbd-813e-4709-a34c-4ba3c00936e3",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_water",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Water"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "bdef327c-70c7-45aa-b21c-84bbfbaf53f8",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_electricity",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Electricity"
+    }
+  ],
+  "params": {}
+}

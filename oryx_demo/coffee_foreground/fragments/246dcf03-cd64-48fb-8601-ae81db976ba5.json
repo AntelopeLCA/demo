@@ -1,0 +1,106 @@
+{
+  "fragments": [
+    {
+      "direction": "Input",
+      "entityId": "246dcf03-cd64-48fb-8601-ae81db976ba5",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "externalId": "coffee_ground",
+      "flow": "flow_coffee_ground",
+      "isBackground": false,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": null,
+      "tags": {
+        "Comment": "",
+        "Name": "Coffee, ground",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "coffee_ground",
+          "origin": "foreground"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "604ff203-a8d4-4a00-b300-0cda9e155c38",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.35
+      },
+      "externalId": "604ff203-a8d4-4a00-b300-0cda9e155c38",
+      "flow": "flow_electricity_grinding",
+      "isBackground": true,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "coffee_ground",
+      "tags": {
+        "Comment": "",
+        "Name": "Electricity, grinding",
+        "StageName": "market for electricity, low voltage"
+      },
+      "terminations": {
+        "default": {
+          "externalId": "56c40e26-3740-4973-916e-3999d997ea60",
+          "origin": "ecoinvent.3.8.cutoff",
+          "scoreCache": [
+            {
+              "quantity": {
+                "externalId": "Global Warming Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.4030040694892383
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Water",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 4.754889586520155e-06
+            },
+            {
+              "quantity": {
+                "externalId": "Ecotoxicity, freshwater",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 10.838528690196682
+            }
+          ],
+          "termFlow": "d69294d7-8d64-4915-a896-9996a014c410"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "6c28ef02-764b-44f3-9bf7-968b8de99aac",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.0
+      },
+      "externalId": "6c28ef02-764b-44f3-9bf7-968b8de99aac",
+      "flow": "flow_coffee_roasted",
+      "isBackground": true,
+      "isBalanceFlow": true,
+      "isPrivate": false,
+      "parent": "coffee_ground",
+      "tags": {
+        "Comment": "",
+        "Name": "Coffee, roasted",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "coffee_roasted",
+          "origin": "foreground"
+        }
+      }
+    }
+  ]
+}

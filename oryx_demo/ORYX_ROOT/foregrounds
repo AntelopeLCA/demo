@@ -1,7 +1,7 @@
 {
   "route": "ORYX_ROOT/foregrounds",
   "response": [
-    "coffee"
+    "coffee_foreground"
   ],
   "params": {}
 }

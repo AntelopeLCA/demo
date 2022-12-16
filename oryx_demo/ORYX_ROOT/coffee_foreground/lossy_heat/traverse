@@ -1,0 +1,68 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/lossy_heat/traverse",
+  "response": [
+    {
+      "parent": null,
+      "node": {
+        "origin": "coffee_foreground",
+        "entity_id": "lossy_heat",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee_foreground",
+          "entity_id": "flow_lossy_heat",
+          "entity_type": "flow"
+        },
+        "direction": "Output",
+        "name": "Lossy Heat"
+      },
+      "name": "lossy_heat",
+      "group": "",
+      "magnitude": 0.65,
+      "scenario": "observed",
+      "unit": "MJ",
+      "node_weight": 1.0,
+      "anchor": null,
+      "anchor_scenario": null,
+      "is_conserved": false
+    },
+    {
+      "parent": "lossy_heat",
+      "node": {
+        "origin": "coffee_foreground",
+        "entity_id": "83bb2999-06fd-4436-b913-b6ebb2f731df",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee_foreground",
+          "entity_id": "flow_delivered_heat",
+          "entity_type": "flow"
+        },
+        "direction": "Input",
+        "name": "Delivered heat"
+      },
+      "name": "heat production, natural gas, at boiler atmospheric non-modulating <100kW [RoW]",
+      "group": "heat production, natural gas, at boiler atmospheric non-modulating <100kW",
+      "magnitude": 1.0,
+      "scenario": "observed",
+      "unit": "MJ",
+      "node_weight": 1.0,
+      "anchor": {
+        "node": {
+          "origin": "ecoinvent.3.8.cutoff",
+          "entity_id": "242162aa-17fb-4e5d-923a-899b5b7bb864",
+          "entity_type": "process"
+        },
+        "anchor_flow": {
+          "origin": "ecoinvent.3.8.cutoff",
+          "entity_id": "b3c58f5d-5815-487c-8b9c-4366e00d22dc",
+          "entity_type": "flow"
+        },
+        "context": null,
+        "descend": true,
+        "score_cache": null
+      },
+      "anchor_scenario": null,
+      "is_conserved": false
+    }
+  ],
+  "params": {}
+}

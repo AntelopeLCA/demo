@@ -1,0 +1,112 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/coffee_1_cup/anchor_lcia/Ozone Depletion Air",
+  "response": {
+    "scenario": "None",
+    "object": "coffee_1_cup",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Ozone Depletion Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Ozone Depletion Air",
+        "unit": "kg CFC-11 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 1.4274420108681328e-10,
+    "components": [
+      {
+        "component": "market for tap water [RoW]",
+        "result": 1.2668253894482454e-13,
+        "origin": "ecoinvent.3.8.cutoff",
+        "entity_id": "ac596c5b-7779-4a51-9c5f-9ec2e0025d6d",
+        "details": [],
+        "summaries": [
+          {
+            "component": "market for tap water [RoW]",
+            "result": 1.2668253894482454e-13,
+            "node_weight": 0.19383999999999998,
+            "unit_score": 6.535417815973202e-13
+          }
+        ]
+      },
+      {
+        "component": "market for electricity, low voltage [US-WECC]",
+        "result": 6.944192857662866e-11,
+        "origin": "ecoinvent.3.8.cutoff",
+        "entity_id": "56c40e26-3740-4973-916e-3999d997ea60",
+        "details": [],
+        "summaries": [
+          {
+            "component": "market for electricity, low voltage [US-WECC]",
+            "result": 6.944192857662866e-11,
+            "node_weight": 0.1792638888888895,
+            "unit_score": 3.8737265495601195e-10
+          }
+        ]
+      },
+      {
+        "component": "market for coffee, green bean [GLO]",
+        "result": 7.138223677918116e-11,
+        "origin": "ecoinvent.3.8.cutoff",
+        "entity_id": "40cd93ba-b97f-43e5-8bbd-f86e34cf1d4d",
+        "details": [],
+        "summaries": [
+          {
+            "component": "market for coffee, green bean [GLO]",
+            "result": 7.138223677918116e-11,
+            "node_weight": 0.01152,
+            "unit_score": 6.196374720415031e-09
+          }
+        ]
+      },
+      {
+        "component": "heat production, natural gas, at boiler condensing modulating >100kW [RoW]",
+        "result": 1.9068565952193515e-14,
+        "origin": "ecoinvent.3.8.cutoff",
+        "entity_id": "44e62980-8489-4a80-8ecb-fca6a12e2d05",
+        "details": [],
+        "summaries": [
+          {
+            "component": "heat production, natural gas, at boiler condensing modulating >100kW [RoW]",
+            "result": 1.9068565952193515e-14,
+            "node_weight": 0.01702,
+            "unit_score": 1.1203622768621336e-12
+          }
+        ]
+      },
+      {
+        "component": "market for tissue paper [GLO]",
+        "result": 3.995897959762893e-13,
+        "origin": "ecoinvent.3.8.cutoff",
+        "entity_id": "6f123135-58e0-4e4c-b556-19d5e71ea15e",
+        "details": [],
+        "summaries": [
+          {
+            "component": "market for tissue paper [GLO]",
+            "result": 3.995897959762893e-13,
+            "node_weight": 0.00034,
+            "unit_score": 1.1752641058126155e-09
+          }
+        ]
+      },
+      {
+        "component": "treatment of municipal solid waste, sanitary landfill [RoW]",
+        "result": 1.3746948301301687e-12,
+        "origin": "ecoinvent.3.8.cutoff",
+        "entity_id": "37fecf1c-c830-4bff-a8fe-76aa79d7ff2d",
+        "details": [],
+        "summaries": [
+          {
+            "component": "treatment of municipal solid waste, sanitary landfill [RoW]",
+            "result": 1.3746948301301687e-12,
+            "node_weight": 0.20034,
+            "unit_score": 6.861809075222965e-12
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

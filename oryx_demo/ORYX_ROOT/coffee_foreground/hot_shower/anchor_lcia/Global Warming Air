@@ -1,0 +1,82 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/hot_shower/anchor_lcia/Global Warming Air",
+  "response": {
+    "scenario": "None",
+    "object": "hot_shower",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Global Warming Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Global Warming Air",
+        "unit": "kg CO2 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 1.4879232420593023,
+    "components": [
+      {
+        "component": "some soap",
+        "result": 0.04837387224721357,
+        "origin": "coffee_foreground",
+        "entity_id": "43ec04e6-a521-4bc3-b15c-b50f5358454c",
+        "details": [],
+        "summaries": [
+          {
+            "component": "some soap",
+            "result": 0.04837387224721357,
+            "node_weight": 0.025,
+            "unit_score": 1.9349548898885427
+          }
+        ]
+      },
+      {
+        "component": "Water, at user",
+        "result": 0.012166006502525372,
+        "origin": "coffee_foreground",
+        "entity_id": "588a5b92-03fd-41be-b60d-909e79125fe7",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Water, at user",
+            "result": 0.012166006502525372,
+            "node_weight": 12.0,
+            "unit_score": 0.0010138338752104477
+          }
+        ]
+      },
+      {
+        "component": "Delivered heat",
+        "result": 1.317889304786835,
+        "origin": "coffee_foreground",
+        "entity_id": "83bb2999-06fd-4436-b913-b6ebb2f731df",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Delivered heat",
+            "result": 1.317889304786835,
+            "node_weight": 17.379692307692306,
+            "unit_score": 0.07582926564261054
+          }
+        ]
+      },
+      {
+        "component": "Water, at user",
+        "result": 0.10949405852272835,
+        "origin": "coffee_foreground",
+        "entity_id": "7934a021-bcce-4857-81c9-2105c6a7a399",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Water, at user",
+            "result": 0.10949405852272835,
+            "node_weight": 108.0,
+            "unit_score": 0.0010138338752104477
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

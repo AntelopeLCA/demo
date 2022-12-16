@@ -1,0 +1,106 @@
+{
+  "fragments": [
+    {
+      "direction": "Input",
+      "entityId": "0472016f-b7a4-47c8-aee7-3c6a230b28cf",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "externalId": "morning_coffee",
+      "flow": "flow_morning_coffee",
+      "isBackground": false,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": null,
+      "tags": {
+        "Comment": "",
+        "Name": "Morning coffee",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "morning_coffee",
+          "origin": "foreground"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "1d9c1654-c09e-4f98-baac-9284017c9095",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.015
+      },
+      "externalId": "1d9c1654-c09e-4f98-baac-9284017c9095",
+      "flow": "flow_sugar",
+      "isBackground": true,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "morning_coffee",
+      "tags": {
+        "Comment": "",
+        "Name": "Sugar",
+        "StageName": "Sugar"
+      },
+      "terminations": {
+        "default": {
+          "externalId": "e24d837f-eabb-41df-b282-c97af565b6ca",
+          "origin": "ecoinvent.3.8.cutoff",
+          "scoreCache": [
+            {
+              "quantity": {
+                "externalId": "Global Warming Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.5292229932109581
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Water",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 4.597861416385924e-05
+            },
+            {
+              "quantity": {
+                "externalId": "Ecotoxicity, freshwater",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 25.6532230402564
+            }
+          ],
+          "termFlow": "601aa448-72b2-4c2c-a05a-e185516d62a1"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "918cac0c-4640-42ed-afb5-8fb81f2d541f",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.00033
+      },
+      "externalId": "918cac0c-4640-42ed-afb5-8fb81f2d541f",
+      "flow": "flow_coffee",
+      "isBackground": true,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "morning_coffee",
+      "tags": {
+        "Comment": "",
+        "Name": "Coffee",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "coffee_1_cup",
+          "origin": "foreground"
+        }
+      }
+    }
+  ]
+}

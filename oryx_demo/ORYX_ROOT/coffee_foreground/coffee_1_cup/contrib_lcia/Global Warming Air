@@ -1,0 +1,121 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/coffee_1_cup/contrib_lcia/Global Warming Air",
+  "response": {
+    "scenario": "None",
+    "object": "coffee_1_cup",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Global Warming Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Global Warming Air",
+        "unit": "kg CO2 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 0.14740390227534017,
+    "components": [
+      {
+        "component": "market for tap water [RoW]",
+        "result": 0.00019262843628998504,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Water, at user",
+            "result": 0.0010138338752104477,
+            "node_weight": 1.0,
+            "unit_score": 0.0010138338752104477
+          }
+        ]
+      },
+      {
+        "component": "coffee_ground",
+        "result": 0.06608822781896392,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Coffee, green",
+            "result": 5.492229935068061,
+            "node_weight": 1.0,
+            "unit_score": 5.492229935068061
+          },
+          {
+            "component": "Electricity, grinding",
+            "result": 0.4030040694892383,
+            "node_weight": 1.0,
+            "unit_score": 0.4030040694892383
+          },
+          {
+            "component": "Electricity",
+            "result": 0.4030040694892383,
+            "node_weight": 1.0,
+            "unit_score": 0.4030040694892383
+          },
+          {
+            "component": "Heat, natural gas",
+            "result": 0.06436435198746296,
+            "node_weight": 1.0,
+            "unit_score": 0.06436435198746296
+          },
+          {
+            "component": "Water",
+            "result": 0.0010138338752104477,
+            "node_weight": 1.0,
+            "unit_score": 0.0010138338752104477
+          }
+        ]
+      },
+      {
+        "component": "market for tissue paper [GLO]",
+        "result": 0.0009430551213479013,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "New Coffee Filter",
+            "result": 2.77369153337618,
+            "node_weight": 1.0,
+            "unit_score": 2.77369153337618
+          }
+        ]
+      },
+      {
+        "component": "market for electricity, low voltage [US-WECC]",
+        "result": 0.07052571216061669,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Electricity, at user",
+            "result": 0.4030040694892383,
+            "node_weight": 1.0,
+            "unit_score": 0.4030040694892383
+          }
+        ]
+      },
+      {
+        "component": "treatment of municipal solid waste, sanitary landfill [RoW]",
+        "result": 0.009654278738121655,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Spent coffee grounds",
+            "result": 0.048189471588907136,
+            "node_weight": 1.0,
+            "unit_score": 0.048189471588907136
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

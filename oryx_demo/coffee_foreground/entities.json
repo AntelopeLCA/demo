@@ -1,0 +1,338 @@
+{
+  "@context": "https://bkuczenski.github.io/lca-tools-datafiles/context.jsonld",
+  "catalogNames": {
+    "coffee_foreground": [
+      "/data/GitHub/Antelope/demo/catalog/coffee_foreground",
+      "/data/GitHub/Antelope/demo/catalog/coffee_foreground/entities.json"
+    ]
+  },
+  "dataSource": "/data/GitHub/Antelope/demo/catalog/coffee",
+  "dataSourceType": "LcForeground",
+  "flows": [
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Coffee",
+      "entityType": "flow",
+      "externalId": "flow_coffee",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-22da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Coffee, 1 cup",
+      "entityType": "flow",
+      "externalId": "flow_coffee_1_cup",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-22da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Coffee filter",
+      "entityType": "flow",
+      "externalId": "flow_coffee_filter",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "01846770-4cfe-4a25-8ad9-919d8d378345"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Coffee, green",
+      "entityType": "flow",
+      "externalId": "flow_coffee_green",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200b9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Coffee, ground",
+      "entityType": "flow",
+      "externalId": "flow_coffee_ground",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200b9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Coffee, roasted",
+      "entityType": "flow",
+      "externalId": "flow_coffee_roasted",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200b9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Delivered heat",
+      "entityType": "flow",
+      "externalId": "flow_delivered_heat",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Electricity",
+      "entityType": "flow",
+      "externalId": "flow_electricity",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "77ae64fa-7e74-4252-9c3b-889c1cd20bfc"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Electricity, at user",
+      "entityType": "flow",
+      "externalId": "flow_electricity_at_user",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "77ae64fa-7e74-4252-9c3b-889c1cd20bfc"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Electricity, grinding",
+      "entityType": "flow",
+      "externalId": "flow_electricity_grinding",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "77ae64fa-7e74-4252-9c3b-889c1cd20bfc"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Heat, natural gas",
+      "entityType": "flow",
+      "externalId": "flow_heat_natural_gas",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Hot Shower",
+      "entityType": "flow",
+      "externalId": "flow_hot_shower",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "01846770-4cfe-4a25-8ad9-919d8d378345"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Hot water 50C",
+      "entityType": "flow",
+      "externalId": "flow_hot_water_50c",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-22da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "hot water fraction",
+      "entityType": "flow",
+      "externalId": "flow_hot_water_fraction",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-22da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "kj per kg water degree C",
+      "entityType": "flow",
+      "externalId": "flow_kj_per_kg_water_degree_c",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "liters per minute",
+      "entityType": "flow",
+      "externalId": "flow_liters_per_minute",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-22da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Lossy Heat",
+      "entityType": "flow",
+      "externalId": "flow_lossy_heat",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Lossy heat from pipe",
+      "entityType": "flow",
+      "externalId": "flow_lossy_heat_from_pipe",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Minutes per shower",
+      "entityType": "flow",
+      "externalId": "flow_minutes_per_shower",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "01846770-4cfe-4a25-8ad9-919d8d378345"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Morning coffee",
+      "entityType": "flow",
+      "externalId": "flow_morning_coffee",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "01846770-4cfe-4a25-8ad9-919d8d378345"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "New Coffee Filter",
+      "entityType": "flow",
+      "externalId": "flow_new_coffee_filter",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200b9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "some soap",
+      "entityType": "flow",
+      "externalId": "flow_some_soap",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200b9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Spent coffee grounds",
+      "entityType": "flow",
+      "externalId": "flow_spent_coffee_grounds",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200b9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Sugar",
+      "entityType": "flow",
+      "externalId": "flow_sugar",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200b9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "times degrees C",
+      "entityType": "flow",
+      "externalId": "flow_times_degrees_c",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200c9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Water",
+      "entityType": "flow",
+      "externalId": "flow_water",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-11da-a746-0800200b9a66"
+    },
+    {
+      "CasNumber": "",
+      "Comment": "",
+      "Name": "Water, at user",
+      "entityType": "flow",
+      "externalId": "flow_water_at_user",
+      "origin": "coffee_foreground",
+      "referenceQuantity": "93a60a56-a3c8-22da-a746-0800200c9a66"
+    }
+  ],
+  "initArgs": {
+    "dataReference": "coffee_foreground"
+  },
+  "quantities": [
+    {
+      "Name": "Number of items",
+      "entityType": "quantity",
+      "externalId": "01846770-4cfe-4a25-8ad9-919d8d378345",
+      "origin": "local.qdb",
+      "referenceUnit": "Item(s)",
+      "uuid": "01846770-4cfe-4a25-8ad9-919d8d378345"
+    },
+    {
+      "Name": "Electric energy",
+      "entityType": "quantity",
+      "externalId": "77ae64fa-7e74-4252-9c3b-889c1cd20bfc",
+      "origin": "local.qdb",
+      "referenceUnit": "kWh",
+      "uuid": "77ae64fa-7e74-4252-9c3b-889c1cd20bfc"
+    },
+    {
+      "Name": "Mass",
+      "entityType": "quantity",
+      "externalId": "93a60a56-a3c8-11da-a746-0800200b9a66",
+      "origin": "local.qdb",
+      "referenceUnit": "kg",
+      "uuid": "93a60a56-a3c8-11da-a746-0800200b9a66"
+    },
+    {
+      "Name": "Net calorific value",
+      "entityType": "quantity",
+      "externalId": "93a60a56-a3c8-11da-a746-0800200c9a66",
+      "origin": "local.qdb",
+      "referenceUnit": "MJ",
+      "uuid": "93a60a56-a3c8-11da-a746-0800200c9a66"
+    },
+    {
+      "Name": "Volume",
+      "entityType": "quantity",
+      "externalId": "93a60a56-a3c8-22da-a746-0800200c9a66",
+      "origin": "local.qdb",
+      "referenceUnit": "m3",
+      "uuid": "93a60a56-a3c8-22da-a746-0800200c9a66"
+    }
+  ],
+  "termManager": {
+    "Characterizations": {
+      "93a60a56-a3c8-11da-a746-0800200b9a66": {
+        "Coffee filter": {
+          "None": {
+            "ref_quantity": "01846770-4cfe-4a25-8ad9-919d8d378345",
+            "value": {
+              "GLO": 0.0017
+            }
+          }
+        },
+        "Water, at user": {
+          "None": {
+            "ref_quantity": "93a60a56-a3c8-22da-a746-0800200c9a66",
+            "value": {
+              "GLO": 1000.0
+            }
+          }
+        }
+      }
+    },
+    "Compartments": [],
+    "Flowables": [
+      {
+        "name": "Coffee filter",
+        "synonyms": [
+          "coffee_foreground/flow_coffee_filter"
+        ]
+      },
+      {
+        "name": "Water, at user",
+        "synonyms": [
+          "coffee_foreground/flow_water_at_user"
+        ]
+      }
+    ]
+  }
+}

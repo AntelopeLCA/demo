@@ -28,7 +28,7 @@ from antelope_foreground import models
 from antelope_core.models import DetailedLciaResult, Entity
 
 API_ROOT = 'ORYX_ROOT'
-
+DEMO_FG = 'coffee_foreground'
 
 def _write_api_response(path, *query, response=None, noisy=False, **kwargs):
     """
@@ -67,7 +67,7 @@ def demo_output(fg, path, *qs, **kwargs):
 
     frags = list(fg.fragments(**kwargs))
 
-    _write_api_response(path, 'foregrounds', response=['coffee'])
+    _write_api_response(path, 'foregrounds', response=[fg.origin])
 
     _write_api_response(path, 'lcia_methods', response=[Entity.from_entity(q).dict() for q in qs])
 
@@ -126,4 +126,4 @@ if __name__ == '__main__':
     PATH = '/data/GitHub/Antelope/demo/oryx_demo/ORYX_ROOT'
     qs = list(cat.query('local.lcia.traci.2.1').lcia_methods())
 
-    demo_output(cat.foreground('coffee'), PATH, qs[4], qs[8])
+    demo_output(cat.foreground(DEMO_FG), PATH, qs[4], qs[8])

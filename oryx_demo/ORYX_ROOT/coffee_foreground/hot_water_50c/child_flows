@@ -1,0 +1,30 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/hot_water_50c/child_flows",
+  "response": [
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "7934a021-bcce-4857-81c9-2105c6a7a399",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_water_at_user",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Water, at user"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_kj_per_kg_water_degree_c",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "kj per kg water degree C"
+    }
+  ],
+  "params": {}
+}

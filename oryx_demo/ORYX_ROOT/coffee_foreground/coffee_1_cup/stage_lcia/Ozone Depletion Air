@@ -1,0 +1,97 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/coffee_1_cup/stage_lcia/Ozone Depletion Air",
+  "response": {
+    "scenario": "None",
+    "object": "coffee_1_cup",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Ozone Depletion Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Ozone Depletion Air",
+        "unit": "kg CFC-11 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 1.427442010868133e-10,
+    "components": [
+      {
+        "component": "Tap water",
+        "result": 1.2417293850349082e-13,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Tap water",
+            "result": 1.2417293850349082e-13,
+            "node_weight": 1.0,
+            "unit_score": 1.2417293850349082e-13
+          }
+        ]
+      },
+      {
+        "component": "Ground Coffee",
+        "result": 7.305552890490126e-11,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Ground Coffee",
+            "result": 7.305552890490126e-11,
+            "node_weight": 1.0,
+            "unit_score": 7.305552890490126e-11
+          }
+        ]
+      },
+      {
+        "component": "Filter",
+        "result": 3.995897959762893e-13,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Filter",
+            "result": 3.995897959762893e-13,
+            "node_weight": 1.0,
+            "unit_score": 3.995897959762893e-13
+          }
+        ]
+      },
+      {
+        "component": "Electricity",
+        "result": 6.779021461730209e-11,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Electricity",
+            "result": 6.779021461730209e-11,
+            "node_weight": 1.0,
+            "unit_score": 6.779021461730209e-11
+          }
+        ]
+      },
+      {
+        "component": "treatment of municipal solid waste, sanitary landfill",
+        "result": 1.3746948301301687e-12,
+        "origin": "coffee_foreground",
+        "entity_id": "coffee_1_cup",
+        "details": [],
+        "summaries": [
+          {
+            "component": "treatment of municipal solid waste, sanitary landfill",
+            "result": 1.3746948301301687e-12,
+            "node_weight": 1.0,
+            "unit_score": 1.3746948301301687e-12
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}

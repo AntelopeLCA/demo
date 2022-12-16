@@ -1,0 +1,90 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/fragments",
+  "response": [
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "coffee_1_cup",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_coffee_1_cup",
+        "entity_type": "flow"
+      },
+      "direction": "Output",
+      "name": "Coffee, 1 cup"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "coffee_ground",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_coffee_ground",
+        "entity_type": "flow"
+      },
+      "direction": "Output",
+      "name": "Coffee, ground"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "coffee_roasted",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_coffee_roasted",
+        "entity_type": "flow"
+      },
+      "direction": "Output",
+      "name": "Coffee, roasted"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "hot_shower",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_hot_shower",
+        "entity_type": "flow"
+      },
+      "direction": "Output",
+      "name": "Hot Shower"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "hot_water_50c",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_hot_water_50c",
+        "entity_type": "flow"
+      },
+      "direction": "Output",
+      "name": "Hot water 50C"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "lossy_heat",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_lossy_heat",
+        "entity_type": "flow"
+      },
+      "direction": "Output",
+      "name": "Lossy Heat"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "morning_coffee",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_morning_coffee",
+        "entity_type": "flow"
+      },
+      "direction": "Output",
+      "name": "Morning coffee"
+    }
+  ],
+  "params": {}
+}

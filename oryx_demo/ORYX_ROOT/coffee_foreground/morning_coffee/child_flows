@@ -1,0 +1,30 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/morning_coffee/child_flows",
+  "response": [
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "1d9c1654-c09e-4f98-baac-9284017c9095",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_sugar",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Sugar"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "918cac0c-4640-42ed-afb5-8fb81f2d541f",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_coffee",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Coffee"
+    }
+  ],
+  "params": {}
+}

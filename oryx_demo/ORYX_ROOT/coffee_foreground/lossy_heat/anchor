@@ -1,0 +1,11 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/lossy_heat/anchor",
+  "response": {
+    "node": null,
+    "anchor_flow": null,
+    "context": null,
+    "descend": true,
+    "score_cache": null
+  },
+  "params": {}
+}

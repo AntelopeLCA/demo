@@ -1,0 +1,30 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/hot_shower/child_flows",
+  "response": [
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "43ec04e6-a521-4bc3-b15c-b50f5358454c",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_some_soap",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "some soap"
+    },
+    {
+      "origin": "coffee_foreground",
+      "entity_id": "a777b53d-02c8-4e95-821b-14f418e62982",
+      "entity_type": "fragment",
+      "flow": {
+        "origin": "coffee_foreground",
+        "entity_id": "flow_minutes_per_shower",
+        "entity_type": "flow"
+      },
+      "direction": "Input",
+      "name": "Minutes per shower"
+    }
+  ],
+  "params": {}
+}

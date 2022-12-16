@@ -1,0 +1,146 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/hot_water_50c/tree_observed",
+  "response": [
+    {
+      "parent": null,
+      "node": {
+        "origin": "coffee_foreground",
+        "entity_id": "hot_water_50c",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee_foreground",
+          "entity_id": "flow_hot_water_50c",
+          "entity_type": "flow"
+        },
+        "direction": "Output",
+        "name": "Hot water 50C"
+      },
+      "name": "hot_water_50c",
+      "group": "",
+      "magnitude": 0.001,
+      "unit": "m3",
+      "anchor": null,
+      "is_cutoff": false,
+      "is_balance_flow": false
+    },
+    {
+      "parent": "hot_water_50c",
+      "node": {
+        "origin": "coffee_foreground",
+        "entity_id": "7934a021-bcce-4857-81c9-2105c6a7a399",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee_foreground",
+          "entity_id": "flow_water_at_user",
+          "entity_type": "flow"
+        },
+        "direction": "Input",
+        "name": "Water, at user"
+      },
+      "name": "market for tap water [RoW]",
+      "group": "Tap water",
+      "magnitude": null,
+      "unit": "m3",
+      "anchor": {
+        "node": {
+          "origin": "ecoinvent.3.8.cutoff",
+          "entity_id": "ac596c5b-7779-4a51-9c5f-9ec2e0025d6d",
+          "entity_type": "process"
+        },
+        "anchor_flow": {
+          "origin": "ecoinvent.3.8.cutoff",
+          "entity_id": "c5adb1fb-872e-4446-a3bb-c4b61aa4bd45",
+          "entity_type": "flow"
+        },
+        "context": null,
+        "descend": true,
+        "score_cache": null
+      },
+      "is_cutoff": false,
+      "is_balance_flow": true
+    },
+    {
+      "parent": "hot_water_50c",
+      "node": {
+        "origin": "coffee_foreground",
+        "entity_id": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee_foreground",
+          "entity_id": "flow_kj_per_kg_water_degree_c",
+          "entity_type": "flow"
+        },
+        "direction": "Input",
+        "name": "kj per kg water degree C"
+      },
+      "name": "kj per kg water degree C",
+      "group": "",
+      "magnitude": 0.004184,
+      "unit": "MJ",
+      "anchor": null,
+      "is_cutoff": false,
+      "is_balance_flow": false
+    },
+    {
+      "parent": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
+      "node": {
+        "origin": "coffee_foreground",
+        "entity_id": "_hot_water_delta_t",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee_foreground",
+          "entity_id": "flow_times_degrees_c",
+          "entity_type": "flow"
+        },
+        "direction": "Input",
+        "name": "times degrees C"
+      },
+      "name": "_hot_water_delta_t",
+      "group": "",
+      "magnitude": 25.0,
+      "unit": "MJ",
+      "anchor": null,
+      "is_cutoff": false,
+      "is_balance_flow": false
+    },
+    {
+      "parent": "_hot_water_delta_t",
+      "node": {
+        "origin": "coffee_foreground",
+        "entity_id": "a0606ca8-59eb-4316-8f8c-6c93e55fdb94",
+        "entity_type": "fragment",
+        "flow": {
+          "origin": "coffee_foreground",
+          "entity_id": "flow_lossy_heat_from_pipe",
+          "entity_type": "flow"
+        },
+        "direction": "Input",
+        "name": "Lossy heat from pipe"
+      },
+      "name": "lossy_heat",
+      "group": "",
+      "magnitude": null,
+      "unit": "MJ",
+      "anchor": {
+        "node": {
+          "origin": "coffee_foreground",
+          "entity_id": "lossy_heat",
+          "entity_type": "fragment"
+        },
+        "anchor_flow": {
+          "origin": "coffee_foreground",
+          "entity_id": "flow_lossy_heat",
+          "entity_type": "flow"
+        },
+        "context": null,
+        "descend": true,
+        "score_cache": null
+      },
+      "is_cutoff": false,
+      "is_balance_flow": true
+    }
+  ],
+  "params": {
+    "scenario": "observed"
+  }
+}

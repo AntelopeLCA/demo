@@ -1,0 +1,11 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/hot_water_50c/anchor",
+  "response": {
+    "node": null,
+    "anchor_flow": null,
+    "context": null,
+    "descend": true,
+    "score_cache": null
+  },
+  "params": {}
+}

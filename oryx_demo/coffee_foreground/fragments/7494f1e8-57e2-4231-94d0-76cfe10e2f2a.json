@@ -1,0 +1,165 @@
+{
+  "fragments": [
+    {
+      "direction": "Input",
+      "entityId": "7494f1e8-57e2-4231-94d0-76cfe10e2f2a",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.001
+      },
+      "externalId": "hot_water_50c",
+      "flow": "flow_hot_water_50c",
+      "isBackground": false,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": null,
+      "tags": {
+        "Comment": "",
+        "Name": "Hot water 50C",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "hot_water_50c",
+          "origin": "foreground"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "7934a021-bcce-4857-81c9-2105c6a7a399",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.0
+      },
+      "externalId": "7934a021-bcce-4857-81c9-2105c6a7a399",
+      "flow": "flow_water_at_user",
+      "isBackground": true,
+      "isBalanceFlow": true,
+      "isPrivate": false,
+      "parent": "hot_water_50c",
+      "tags": {
+        "Comment": "",
+        "Name": "Water, at user",
+        "StageName": "Tap water"
+      },
+      "terminations": {
+        "default": {
+          "externalId": "ac596c5b-7779-4a51-9c5f-9ec2e0025d6d",
+          "origin": "ecoinvent.3.8.cutoff",
+          "scoreCache": [
+            {
+              "quantity": {
+                "externalId": "Global Warming Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.0010138338752104477
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Water",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 2.3481998437628096e-08
+            },
+            {
+              "quantity": {
+                "externalId": "Eutrophication Air",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 1.164914526812451e-07
+            },
+            {
+              "quantity": {
+                "externalId": "Ecotoxicity, freshwater",
+                "origin": "local.lcia.traci.2.1"
+              },
+              "score": 0.01452214539408721
+            }
+          ],
+          "termFlow": "c5adb1fb-872e-4446-a3bb-c4b61aa4bd45"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.004184
+      },
+      "externalId": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
+      "flow": "flow_kj_per_kg_water_degree_c",
+      "isBackground": false,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "hot_water_50c",
+      "tags": {
+        "Comment": "",
+        "Name": "kj per kg water degree C",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
+          "origin": "foreground"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "c1125b1f-91da-4d08-91ca-7f7fa2b27e93",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 25.0
+      },
+      "externalId": "_hot_water_delta_t",
+      "flow": "flow_times_degrees_c",
+      "isBackground": false,
+      "isBalanceFlow": false,
+      "isPrivate": false,
+      "parent": "9fac8900-a96f-4115-b8d4-1868b906f0e8",
+      "tags": {
+        "Comment": "",
+        "Name": "times degrees C",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "_hot_water_delta_t",
+          "origin": "foreground"
+        }
+      }
+    },
+    {
+      "direction": "Input",
+      "entityId": "a0606ca8-59eb-4316-8f8c-6c93e55fdb94",
+      "entityType": "fragment",
+      "exchangeValues": {
+        "0": 1.0,
+        "1": 0.0
+      },
+      "externalId": "a0606ca8-59eb-4316-8f8c-6c93e55fdb94",
+      "flow": "flow_lossy_heat_from_pipe",
+      "isBackground": true,
+      "isBalanceFlow": true,
+      "isPrivate": false,
+      "parent": "_hot_water_delta_t",
+      "tags": {
+        "Comment": "",
+        "Name": "Lossy heat from pipe",
+        "StageName": ""
+      },
+      "terminations": {
+        "default": {
+          "externalId": "lossy_heat",
+          "origin": "foreground"
+        }
+      }
+    }
+  ]
+}

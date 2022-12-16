@@ -1,0 +1,52 @@
+{
+  "route": "ORYX_ROOT/coffee_foreground/hot_water_50c/anchor_lcia/Global Warming Air",
+  "response": {
+    "scenario": "None",
+    "object": "hot_water_50c",
+    "quantity": {
+      "origin": "local.lcia.traci.2.1",
+      "entity_id": "Global Warming Air",
+      "entity_type": "quantity",
+      "properties": {
+        "name": "Global Warming Air",
+        "unit": "kg CO2 eq",
+        "is_lcia_method": true
+      }
+    },
+    "scale": 1.0,
+    "total": 0.013216512623236698,
+    "components": [
+      {
+        "component": "Delivered heat",
+        "result": 0.01220267874802625,
+        "origin": "coffee_foreground",
+        "entity_id": "83bb2999-06fd-4436-b913-b6ebb2f731df",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Delivered heat",
+            "result": 0.01220267874802625,
+            "node_weight": 0.16092307692307692,
+            "unit_score": 0.07582926564261054
+          }
+        ]
+      },
+      {
+        "component": "Water, at user",
+        "result": 0.0010138338752104477,
+        "origin": "coffee_foreground",
+        "entity_id": "7934a021-bcce-4857-81c9-2105c6a7a399",
+        "details": [],
+        "summaries": [
+          {
+            "component": "Water, at user",
+            "result": 0.0010138338752104477,
+            "node_weight": 1.0,
+            "unit_score": 0.0010138338752104477
+          }
+        ]
+      }
+    ]
+  },
+  "params": {}
+}
