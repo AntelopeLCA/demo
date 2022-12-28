@@ -21,6 +21,9 @@ TERMS = {
 }
 
 
+DEMO_TERMS = {k: ['demo.ecoinvent', v[1]] for k, v in TERMS.items()}
+
+
 class CoffeeAndShower(QuickAndEasy):
 
     __c = None
@@ -93,12 +96,15 @@ class CoffeeAndShower(QuickAndEasy):
         shower = self.new_link('Hot Shower', 'Count', 'Output', 1.0)
         mins = self.new_link('Minutes per shower', 'Count', 'Input', 15, parent=shower)
         ls = self.new_link('liters per minute', 'volume', 'Input', 8, units='l', parent=mins)
-        self.new_link('cold water fraction', 'volume', 'Input', 0.1, flow_ref='flow_water_at_user', parent=ls,
-                      stage='Cold water').terminate(self.terms('tap_water'))
+        cold = self.new_link('cold water fraction', 'volume', 'Input', 0.1, flow_ref='flow_water_at_user', parent=ls,
+                             stage='Cold water').terminate(self.terms('tap_water'))
         self.new_link('hot water fraction', 'volume', 'Input', balance=True, parent=ls,
                       stage='Hot water').terminate(hw, descend=False)
 
         self.new_link('some soap', 'mass', 'Input', 0.025, parent=shower, stage='Soap').terminate(self.terms('soap'))
+
+        self.fg.observe(cold, exchange_value=0, scenario='hot shower')
+        self.fg.observe(mins, exchange_value=20, scenario='long shower')
 
         self.__s = heat, hw, shower
         return self.__s
@@ -108,8 +114,12 @@ class CoffeeAndShower(QuickAndEasy):
         return self.__s
 
 
-def qae_init(cat, fg_name='coffee'):
-    qae = CoffeeAndShower.by_name(cat, fg_name, terms=TERMS)
+def qae_init(cat, fg_name='coffee_demo', xdb=False):
+    if xdb:
+        terms = DEMO_TERMS
+    else:
+        terms = TERMS
+    qae = CoffeeAndShower.by_name(cat, fg_name, terms=terms)
     qae.build_coffee_frags()
     qae.build_shower()
     return qae

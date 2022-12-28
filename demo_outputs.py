@@ -30,6 +30,7 @@ from antelope_core.models import DetailedLciaResult, Entity
 API_ROOT = 'ORYX_ROOT'
 DEMO_FG = 'coffee_foreground'
 
+
 def _write_api_response(path, *query, response=None, noisy=False, **kwargs):
     """
     :param path:
@@ -124,6 +125,6 @@ if __name__ == '__main__':
     cat = lca_init()
 
     PATH = '/data/GitHub/Antelope/demo/oryx_demo/ORYX_ROOT'
-    qs = list(cat.query('local.lcia.traci.2.1').lcia_methods())
+    lcias = list(cat.query('local.lcia.traci.2.1').lcia_methods())
 
-    demo_output(cat.foreground(DEMO_FG), PATH, qs[4], qs[8])
+    demo_output(cat.foreground(DEMO_FG), PATH, lcias[4], lcias[8])
