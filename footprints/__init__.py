@@ -18,3 +18,14 @@ def lca_init(xdb=False):
     cat.lcia_engine.add_synonym('number of items', 'Count')
     cat.lcia_engine.get_canonical('volume')['UnitConversion']['mL'] = 1e6
     return cat
+
+
+def run_demo(fg_name, xdb=False):
+    cat = lca_init(xdb=xdb)
+
+    if fg_name not in cat.foregrounds:
+        cat.create_foreground(fg_name)
+
+    qae = qae_init(cat, fg_name, xdb=xdb)
+
+    return qae
