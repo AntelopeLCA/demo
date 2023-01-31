@@ -1,4 +1,4 @@
-from antelope_reports import QuickAndEasy  # , MissingValue
+from antelope_reports import QuickAndEasy  # , MissingValue  #this is secret!
 
 from pandas import DataFrame
 from itertools import chain
@@ -97,7 +97,9 @@ class CoffeeAndShower(QuickAndEasy):
         mins = self.new_link('Minutes per shower', 'Count', 'Input', 15, parent=shower)
         ls = self.new_link('liters per minute', 'volume', 'Input', 8, units='l', parent=mins)
         cold = self.new_link('cold water fraction', 'volume', 'Input', 0.1, flow_ref='flow_water_at_user', parent=ls,
-                             stage='Cold water').terminate(self.terms('tap_water'))
+                             stage='Cold water')
+        cold.terminate(self.terms('tap_water'))
+
         self.new_link('hot water fraction', 'volume', 'Input', balance=True, parent=ls,
                       stage='Hot water').terminate(hw, descend=False)
 

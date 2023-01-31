@@ -57,6 +57,23 @@ def _write_api_response(path, *query, response=None, noisy=False, **kwargs):
         json.dump(j, fp, indent=2)
 
 
+def _update_api_response(path, *query, response, noisy=False, **kwargs):
+    wp = os.path.join(path, *query)
+    if os.path.exists(wp):
+        if noisy:
+            print('Reading content at %s' % wp)
+        with open(wp, 'r') as fp:
+            j = json.load(fp)
+        resp = j['response']
+        if isinstance(resp, list):
+            resp.extend(response)
+        else:
+            resp.update(response)
+        _write_api_response(path, *query, resp, noisy=noisy, **kwargs)
+    else:
+        _write_api_response(path, *query, response, noisy=noisy, **kwargs)
+
+
 def demo_output(fg, path, *qs, **kwargs):
     """
 
@@ -68,7 +85,7 @@ def demo_output(fg, path, *qs, **kwargs):
 
     frags = list(fg.fragments(**kwargs))
 
-    _write_api_response(path, 'foregrounds', response=[fg.origin])
+    _update_api_response(path, 'foregrounds', response=[fg.origin])
 
     _write_api_response(path, 'lcia_methods', response=[Entity.from_entity(q).dict() for q in qs])
 
