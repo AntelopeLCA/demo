@@ -57,7 +57,7 @@ def _write_api_response(path, *query, response=None, noisy=False, **kwargs):
         json.dump(j, fp, indent=2)
 
 
-def _update_api_response(path, *query, response, noisy=False, **kwargs):
+def _update_api_response(path, *query, response=None, noisy=False, **kwargs):
     wp = os.path.join(path, *query)
     if os.path.exists(wp):
         if noisy:
@@ -69,9 +69,9 @@ def _update_api_response(path, *query, response, noisy=False, **kwargs):
             resp.extend(response)
         else:
             resp.update(response)
-        _write_api_response(path, *query, resp, noisy=noisy, **kwargs)
+        _write_api_response(path, *query, response=resp, noisy=noisy, **kwargs)
     else:
-        _write_api_response(path, *query, response, noisy=noisy, **kwargs)
+        _write_api_response(path, *query, response=response, noisy=noisy, **kwargs)
 
 
 def demo_output(fg, path, *qs, **kwargs):
