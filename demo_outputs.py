@@ -25,7 +25,7 @@ import json
 from footprints import lca_init
 
 from antelope_foreground import models
-from antelope_core.models import DetailedLciaResult, Entity
+from antelope.models import LciaResult, Entity
 
 API_ROOT = 'ORYX_ROOT'
 DEMO_FG = 'coffee_foreground'
@@ -111,8 +111,6 @@ def demo_output(fg, path, *qs, **kwargs):
         _write_api_response(*subpath, 'child_flows', response=cfs)
 
         anch = frag.term.to_anchor()
-        if anch is None:
-            anch = models.Anchor.null()
         _write_api_response(*subpath, 'anchor', response=anch.dict())
 
         ffs = [models.FragmentFlow.from_fragment_flow(ff).dict() for ff in frag.traverse(observed=True)]
@@ -125,16 +123,16 @@ def demo_output(fg, path, *qs, **kwargs):
         for q in qs:
             res = frag.fragment_lcia(q)
 
-            lcia = DetailedLciaResult.from_lcia_result(frag, res).dict()
+            lcia = LciaResult.detailed(frag, res).dict()
             _write_api_response(*subpath, 'contrib_lcia', q.external_ref, response=lcia)
 
-            lcia_f = DetailedLciaResult.from_lcia_result(frag, res.flatten()).dict()
+            lcia_f = LciaResult.detailed(frag, res.flatten()).dict()
             _write_api_response(*subpath, 'lcia', q.external_ref, response=lcia_f)
 
-            lcia_s = DetailedLciaResult.from_lcia_result(frag, res.aggregate()).dict()
+            lcia_s = LciaResult.detailed(frag, res.aggregate()).dict()
             _write_api_response(*subpath, 'stage_lcia', q.external_ref, response=lcia_s)
 
-            lcia_a = DetailedLciaResult.from_lcia_result(frag, res.terminal_nodes()).dict()
+            lcia_a = LciaResult.detailed(frag, res.terminal_nodes()).dict()
             _write_api_response(*subpath, 'anchor_lcia', q.external_ref, response=lcia_a)
 
 
